@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="accueil" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Daily To-Do</a></li>
+                        <li><a href="argent.html">Faire de l'argent</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+            </div>
+        </section>
+
+        <section id="tasks" class="tasks">
+            <div class="container">
+                <h2>To-Do-List</h2>
+                <div class="task-buttons">
+                    <button id="checkAll" class="btn-check">✓ Tout cocher</button>
+                    <button id="uncheckAll" class="btn-uncheck">✕ Tout décocher</button>
+                </div>
+                <div class="tasks-grid">
+                    <div class="task-card">
+                        <img src="images/dailytask.png" alt="Tâche 1">
+                        <h3>Tâches Quotidiennes</h3>
+                        <p>Faire les tâches quotidiennes chaque jours</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task1" class="task-check">
+                            <label for="task1">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/Jardinage.png" alt="Tâche 2">
+                        <h3>Jardinage</h3>
+                        <p>Récoltez et replantez dès que vous le pouvez</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task2" class="task-check">
+                            <label for="task2">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/puzzle.png" alt="Tâche 3">
+                        <h3>Puzzles de Ka-Ching</h3>
+                        <p>Acheter, Assembler et Revendez les puzzles chaque jours</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task3" class="task-check">
+                            <label for="task3">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card zoomable">
+                        <img src="images/truffes.png" alt="Tâche 4">
+                        <h3>Les Truffes</h3>
+                        <p>Recoltez les truffes sur la petite île <legend>(15 minutes de repop)</legend></p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task4" class="task-check">
+                            <label for="task4">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/CheneGlissant.png" alt="Tâche 5">
+                        <h3>Chêne Glissant</h3>
+                        <p>Récoltez votre Chêne Glissant</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task5" class="task-check">
+                            <label for="task5">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/fluorite.png" alt="Tâche 6">
+                        <h3>Fluorite</h3>
+                        <p>Récoltez votre Fluorite</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task6" class="task-check">
+                            <label for="task6">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/Chat.png" alt="Tâche 7">
+                        <h3>Animaux de Compagnies</h3>
+                        <p>Nourrissez et caressez vos animaux de compagnie.</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task7" class="task-check">
+                            <label for="task7">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card zoomable">
+                        <img src="images/MangeoireMap.png" alt="Tâche 8">
+                        <h3>Les Mangeoires</h3>
+                        <p>Remplissez les mangeoires des animaux, <legend>Afin d'augmenter vos affinités et recevoir des cadeaux</legend></p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task8" class="task-check">
+                            <label for="task8">Complétée</label>
+                        </div>
+                    </div>
+                    <div class="task-card zoomable">
+                        <img src="images/grosarbres.png" alt="Tâche 9">
+                        <h3>Bois Rare</h3>
+                        <p>Récoltez votre Bois Rare sur les Gros arbres autour de la ville</p>
+                        <div class="task-checkbox">
+                            <input type="checkbox" id="task9" class="task-check">
+                            <label for="task9">Complétée</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal zoom -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // Fonctions pour gérer les cookies
+    function setCookie(name, value, days = 365) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        const expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const cookies = document.cookie.split(';');
+        for (let cookie of cookies) {
+            cookie = cookie.trim();
+            if (cookie.indexOf(nameEQ) === 0) {
+                return cookie.substring(nameEQ.length);
+            }
+        }
+        return null;
+    }
+
+    // Charger l'état des checkboxes depuis les cookies au chargement
+    window.addEventListener('DOMContentLoaded', function() {
+        for (let i = 1; i <= 9; i++) {
+            const checkbox = document.getElementById('task' + i);
+            const saved = getCookie('task' + i);
+            if (saved === 'true') {
+                checkbox.checked = true;
+            }
+        }
+    });
+
+    // Sauvegarder dans les cookies au changement
+    const checkboxes = document.querySelectorAll('.task-check');
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            setCookie(this.id, this.checked);
+        });
+    });
+
+    // Boutons Tout cocher / Tout déccocher
+    const checkAllBtn = document.getElementById('checkAll');
+    const uncheckAllBtn = document.getElementById('uncheckAll');
+
+    checkAllBtn.addEventListener('click', function() {
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = true;
+            setCookie(checkbox.id, true);
+        });
+    });
+
+    uncheckAllBtn.addEventListener('click', function() {
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+            setCookie(checkbox.id, false);
+        });
+    });
+
+    // Zoom des images
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const closeBtn = document.querySelector('.close');
+    const taskImages = document.querySelectorAll('.task-card.zoomable img');
+
+    // Ouvrir le modal au clic sur une image
+    taskImages.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+        });
+        img.style.cursor = 'pointer';
+    });
+
+    // Fermer le modal au clic sur le X
+    closeBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Fermer le modal au clic en dehors de l'image
+    modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    // Fermer avec la touche Échap
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,32 @@
+# Fichiers et dossiers à ignorer
+
+# Environnement
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dépendances
+node_modules/
+*.gem
+Gemfile.lock
+
+# Build
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp

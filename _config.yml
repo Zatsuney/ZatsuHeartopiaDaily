@@ -1,0 +1,20 @@
+# Configuration Jekyll pour GitHub Pages
+
+title: ZHeartopia
+description: "Votre plateforme personnelle pour partager vos projets et idées"
+author: "Votre Nom"
+url: ""
+
+# Thème
+theme: jekyll-theme-minimal
+
+# Paramètres supplémentaires
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclusions
+exclude:
+  - .gitignore
+  - README.md
+  - node_modules/
