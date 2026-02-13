@@ -308,6 +308,27 @@ section {
     color: #667eea;
 }
 
+/* Completed state for task-card */
+.task-card.completed {
+    background: linear-gradient(to top, #2b6ef6 0%, #90aaff 100%);
+    color: white;
+}
+
+.task-card.completed h3,
+.task-card.completed p,
+.task-card.completed .task-checkbox label {
+    color: white;
+}
+
+.task-card.completed .task-checkbox {
+    justify-content: center;
+}
+
+/* When card is completed, tint the image background with the same gradient (subtle) */
+.task-card.completed img {
+    background: linear-gradient(to top, rgba(43,110,246,0.18) 0%, rgba(144,170,255,0.18) 100%);
+}
+
 /* Footer */
 footer {
     background-color: #2c3e50;
