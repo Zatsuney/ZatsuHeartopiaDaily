@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attrapage d'Insectes - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="insectes" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="argent.html">Faire de l'argent</a></li>
+                        <li><a href="passions.html">Passions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="insectes-content" class="tasks">
+            <div class="container">
+                <div class="back-link">
+                    <a href="passions.html">← Retour aux Passions</a>
+                </div>
+                <h2>🦋 Guide Complet des Insectes</h2>
+                
+                <!-- Légende -->
+                <div class="fish-legend">
+                    <h3>📖 Légende</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <strong>Types:</strong> Papillon • Coléoptère • Libellule • Sauterelle/Mante • Abeille
+                        </div>
+                        <div class="legend-item">
+                            <strong>Météo:</strong> 🌞 Ensoleillé • 🌧️ Pluvieux • 🌈 Arc-en-ciel
+                        </div>
+                        <div class="legend-item">
+                            <strong>Horaires:</strong> 🌙 Nuit • 🌅 Aube • ☀️ Jour • 🌇 Crépuscule
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barre de recherche -->
+                <div class="fish-search">
+                    <input type="text" id="bugSearch" placeholder="🔍 Rechercher un insecte par nom, niveau, emplacement..." />
+                    <div class="search-filters">
+                        <button class="filter-btn active" data-filter="all">Tous (64)</button>
+                        <button class="filter-btn" data-filter="papillon">🦋 Papillons (24)</button>
+                        <button class="filter-btn" data-filter="coleoptere">🐞 Coléoptères (20)</button>
+                        <button class="filter-btn" data-filter="libellule">🔵 Libellules (6)</button>
+                        <button class="filter-btn" data-filter="sauterelle">🦗 Sauterelles (8)</button>
+                        <button class="filter-btn" data-filter="abeille">🐝 Abeilles (3)</button>
+                        <button class="filter-btn" data-filter="rare">⭐ Rares Lv.10 (4)</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+
+                <!-- PAPILLONS -->
+                <div class="fish-section" data-location="papillon">
+                    <h3>🦋 PAPILLONS</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Actias Neidhoederi</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌞🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 105-300</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Azuré de Porcelaine</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Zone centrale</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 105-300</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Charaxes Jasuis</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Montagne Onsen (Source Chaude)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌅☀️</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Chenille Porte-Case ⭐</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Forêt (Tour du Cerf)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 440-660</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Citron Aspasia</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Comète Papillon de Nuit</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 240-1920</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grand Paon de Nuit</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Isabelle</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Forêt (Forêt de chêne spirituels)</p>
+                            <p class="fish-info">🌞🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Mélitée Léopard</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Village de Pêcheurs (Quai)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Morpho Bleu</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Forêt (Forêt de chêne spirituels)</p>
+                            <p class="fish-info">🌞🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Morpho de Sulkowsky</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Événement Attireur d'Insectes</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Morpho Helena ⭐</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Plage violette)</p>
+                            <p class="fish-info">🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 240-1920</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Nacré</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Champ aux Moulins)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅</p>
+                            <p class="fish-price">💰 240-1920</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Ornithoptère Vert</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Paon-du-Jour</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Champ aux Moulins)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Papillon à Anneaux Rouges</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Papillon à Col Rouge</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Maison</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Papillon Blanc</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Village de Pêcheurs</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Papillon Doré</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Forêt</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Papillon Soleil ⭐</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Forêt (Tour du Cerf)</p>
+                            <p class="fish-info">🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 Prix inconnu</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Papillon Sorcière Blanche</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Parnassien</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Piéride du Cresson</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Zone centrale</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 30-240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Vanesse Violette</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Montagne de baleine)</p>
+                            <p class="fish-info">🌞🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLÉOPTÈRES -->
+                <div class="fish-section" data-location="coleoptere">
+                    <h3>🐞 COLÉOPTÈRES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Capricorne des Montagnes</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Île forestière</p>
+                            <p class="fish-info">🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Capricorne Tigré</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Forêt</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Cétoine Étoilée</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Montagne de baleine)</p>
+                            <p class="fish-info">🌧️🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 275-1100</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Cétoine Étoilée Bleue</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Maison (Rochers)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Cicindèle Verte</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Montagne Onsen</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Coccinelle à Quatre Étoiles</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Montagne Onsen (Lac Volcanique)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Coccinelle à Sept Points</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Coccinelle Asiatique</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Forêt (Tour du Cerf)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Criocère de l'Asperge</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Champ de Fleurs</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 55-220</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Lucane Doré Spectral</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Forêt (Forêt de chêne spirituels)</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 440-660</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Lucanus</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Forêt (Puzzle de Saut)</p>
+                            <p class="fish-info">🌧️🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 275-1100</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Pioche Arc-en-Ciel</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes (Ruines)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 440-660</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Punaise Picasso</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Plage violette)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 185-370</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Pyrochroa</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Montagne Onsen (Source Chaude)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Pyrrhocoris Apterus</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Maison (Rochers)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 35-280</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Scarabée Argenté aux Gemmes</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Montagne Onsen (Falaise rocheuse)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌅☀️</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Scarabée Doré aux Gemmes</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Forêt (Puzzle de Saut)</p>
+                            <p class="fish-info">🌞🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 275-1100</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Scarabée Hercule ⭐</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Montagne Onsen (Lac Volcanique)</p>
+                            <p class="fish-info">🌞🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 Prix inconnu</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Scarabée Sacré</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Montagne Onsen (Ruines)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️</p>
+                            <p class="fish-price">💰 275-1100</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Scarabée Unicorne</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Village de Pêcheurs (Jetée Est)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 275-1100</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIBELLULES -->
+                <div class="fish-section" data-location="libellule">
+                    <h3>🔵 LIBELLULES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Agrion de Virginie</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Rive du Lac Forestier</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grand Agrion</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Bord de l'eau</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 35-280</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Libellule à Queue Blanche</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Berge de la Rivière</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Libellule Rose</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Montagne Onsen</p>
+                            <p class="fish-info">🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 185-370</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Libellule Tachetée</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Rive du Lac de Banlieue</p>
+                            <p class="fish-info">🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SAUTERELLES & MANTES -->
+                <div class="fish-section" data-location="sauterelle">
+                    <h3>🦗 SAUTERELLES & MANTES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Criquet à Ailes Réticulées</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Banlieue</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 140-1120</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Criquet aux Pattes Massives</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Village de Pêcheurs</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grillon</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Plage violette)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 180-360</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Mante à Tête Conique</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Montagne Onsen (Ruines)</p>
+                            <p class="fish-info">🌧️🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 515</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Mante Arc-en-Ciel</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Montagne Onsen (Falaise rocheuse)</p>
+                            <p class="fish-info">🌞🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 195-1560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Mante Papoue</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Montagne Onsen (Ruines)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 390-1560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Sauterelle de l'Oasis</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Montagne Onsen</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 45-360</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Sauterelle Rose</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Événement Appât à Insectes</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 90-720</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ABEILLES -->
+                <div class="fish-section" data-location="abeille">
+                    <h3>🐝 ABEILLES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Abeille à Queue Blanche</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Forêt (Tour du Cerf)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Abeille Charpentière</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Champ de Fleurs (Montagne de baleine)</p>
+                            <p class="fish-info">🌞🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 165-1320</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Xylocope Bleu</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Village de Pêcheurs (Place du Village)</p>
+                            <p class="fish-info">🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 440-660</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AUTRES INSECTES -->
+                <div class="fish-section" data-location="autre">
+                    <h3>🐛 AUTRES INSECTES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Cigale</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Forêt (Forêt de chêne spirituels)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 220-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Fourmi</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Village de Pêcheurs (Place du Village)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 220-880</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Punaise Bleue</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Village de Pêcheurs (Phare)</p>
+                            <p class="fish-info">🌞🌧️🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 110-880</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-note">
+                    <p><strong>📝 Note:</strong> Les insectes marqués d'une étoile ⭐ sont des insectes rares de niveau 10.</p>
+                    <p><strong>💡 Astuce:</strong> Certains insectes n'apparaissent que lors d'événements spéciaux (Appât à Insectes) ou dans des conditions météorologiques spécifiques!</p>
+                    <p><strong>🌈 Arc-en-ciel:</strong> Les insectes qui n'apparaissent qu'avec météo arc-en-ciel sont particulièrement rares.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction de recherche d'insectes
+        const searchInput = document.getElementById('bugSearch');
+        const searchResults = document.getElementById('searchResults');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const bugCards = document.querySelectorAll('.fish-card');
+        const bugSections = document.querySelectorAll('.fish-section');
+        
+        let currentFilter = 'all';
+        
+        // Fonction de recherche
+        function searchBugs() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+            
+            if (searchTerm === '') {
+                searchResults.style.display = 'none';
+                applyFilter(currentFilter);
+                return;
+            }
+            
+            searchResults.style.display = 'block';
+            searchResults.innerHTML = '';
+            
+            bugCards.forEach(card => {
+                const bugName = card.querySelector('h4').textContent.toLowerCase();
+                const bugLevel = card.querySelector('.fish-level').textContent.toLowerCase();
+                const bugLocation = card.querySelector('.fish-location').textContent.toLowerCase();
+                const bugInfo = card.querySelector('.fish-info').textContent.toLowerCase();
+                
+                if (bugName.includes(searchTerm) || 
+                    bugLevel.includes(searchTerm) || 
+                    bugLocation.includes(searchTerm) ||
+                    bugInfo.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Afficher/masquer les sections
+            bugSections.forEach(section => {
+                const visibleCardsInSection = Array.from(section.querySelectorAll('.fish-card'))
+                    .filter(card => card.style.display !== 'none').length;
+                section.style.display = visibleCardsInSection > 0 ? 'block' : 'none';
+            });
+            
+            // Afficher le résultat
+            if (visibleCount === 0) {
+                searchResults.innerHTML = '<p class="no-results">❌ Aucun insecte trouvé pour "' + searchTerm + '"</p>';
+            } else {
+                searchResults.innerHTML = '<p class="search-count">✓ ' + visibleCount + ' insecte(s) trouvé(s)</p>';
+            }
+        }
+        
+        // Fonction de filtre
+        function applyFilter(filter) {
+            currentFilter = filter;
+            
+            if (filter === 'all') {
+                bugCards.forEach(card => card.style.display = 'block');
+                bugSections.forEach(section => section.style.display = 'block');
+            } else if (filter === 'rare') {
+                bugCards.forEach(card => {
+                    card.style.display = card.classList.contains('rare') ? 'block' : 'none';
+                });
+                bugSections.forEach(section => {
+                    const visibleCards = Array.from(section.querySelectorAll('.fish-card.rare'));
+                    section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                });
+            } else {
+                // Filtrer par type
+                bugSections.forEach(section => {
+                    if (section.dataset.location === filter) {
+                        section.style.display = 'block';
+                        section.querySelectorAll('.fish-card').forEach(card => card.style.display = 'block');
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchResults.style.display = 'none';
+        }
+        
+        // Event listeners
+        searchInput.addEventListener('input', searchBugs);
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                searchInput.value = '';
+                applyFilter(filter);
+            });
+        });
+        
+        // Réinitialiser la recherche au chargement
+        searchResults.style.display = 'none';
+    </script>
+</body>
+</html>

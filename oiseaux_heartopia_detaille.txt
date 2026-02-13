@@ -1,0 +1,270 @@
+﻿LÉGENDE:
+- Lv. = Niveau d'Observation
+- Emplacement = Lieu où observer l'oiseau
+- Type = Catégorie d'oiseau
+- Météo: 🌞 Ensoleillé | 🌧️ Pluvieux | 🌈 Arc-en-ciel
+- Horaires: 🌙 Nuit | 🌅 Aube | ☀️ Jour | 🌇 Crépuscule
+
+================================================================================
+
+PAR TYPE D'OISEAU:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE BANLIEUE - 7 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BOUVREUIL PIVOINE (Lv.2) - Banlieue
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+2. CALLISTE PARADIS (Lv.9) - Banlieue
+   Météo: Non spécifié | Horaires: Non spécifié | Prix: Non spécifié
+
+3. COLOMBE JAMBU (Lv.7) - Banlieue
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 27-880
+
+4. MERLE BLEU DE L'EST (Lv.7) - Banlieue
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 120
+
+5. PIE-GRIÈCHE À TÊTE ROUSSE (Lv.2) - Banlieue
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE LACS - 7 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CANARD À TÊTE BLANCHE (Lv.9) - Lac Volcanique
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 45-720
+
+2. CANARD COLVERT (Lv.1) - Lac
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 12-400
+
+3. GROS-BEC (Lv.6) - Lac Volcanique
+   Météo: 🌞🌧️🌈 | Horaires: 🌇 | Prix: 15-480
+
+4. GUÊPIER D'EUROPE (Lv.5) - Rive du Lac de Montagne Thermale
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 22-720
+
+5. HARLE PIETTE (Lv.4) - Lac de la forêt
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 22-720
+
+6. PETIT FLAMANT (Lv.5) - Rive du Lac de la Forêt
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 27-880
+
+7. TADORNE CASARCA (Lv.3) - Lac de banlieue
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE RIVIÈRES - 2 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CANARD SIFFLEUR (Lv.2) - Rivière
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+2. EIDER ROYAL (Lv.3) - Rivière
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE MER - 8 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CORMORAN À FACE ROUGE (Lv.6) - Vieille Mer/Mer aux Baleines
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 22-720
+
+2. CORMORAN HUPPÉ (Lv.3) - Sous l'Île forestière/autour du phare
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+3. CORMORAN IMPÉRIAL (Lv.9) - Mer de l'Est/Mer Zéphyr
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 45-720
+
+4. GOÉLAND D'AUDOUIN (Lv.3) - Mer aux Baleines (bord de mer & plages)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+5. MOUETTE - Bord de mer
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+6. NODDI BRUN (Lv.5) - Bord de mer du Vieil Océan
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 22-720
+
+7. STERNE (Lv.7) - Bord de mer côté Est
+   Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 35-1120
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE FORÊT - 8 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. DURBEC DES SAPINS (Lv.4) - Île forestière
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+2. FAUCON CRÉCERELLE (Lv.7) - Forêt (Tour du Cerf)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 47-1520
+
+3. JARDINIER PRINCE-RÉGENT (Lv.4) - Forêt (Forêt de chêne spirituels)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+4. MÉSANGE À MENTON ARGENT (Lv.3) - Forêt (Puzzle de Saut)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+5. PIGEON DE WONGA (Lv.1) - Forêt
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+6. SIZERIN (Lv.7) - Forêt (Forêt de chêne spirituels)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: Non spécifié
+
+7. TROGLODYTE (Lv.1) - Forêt
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE CHAMP DE FLEURS - 6 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. COLOMBAR À COU ROSE (Lv.1) - Champ de Fleurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+2. FLAMANT ROSE AMÉRICAIN (Lv.9) - Champ de Fleurs
+   Météo: 🌈 | Horaires: ☀️ | Prix: Non spécifié
+
+3. MÉSANGE AZURÉE (Lv.7) - Champ de Fleurs (Champ aux Moulins)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 22-720
+
+4. PIGEON ROSE (Lv.7) - Champ de Fleurs (Montagne de baleine)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 27-880
+
+5. PINSON DES ARBRES (Lv.2) - Champ de Fleurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+6. PTILOPE DE WALLACE - Champ de Fleurs (Champ aux Moulins)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE VILLAGE DE PÊCHEURS - 6 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CARPOPHAGE BLANC (Lv.1) - Village de Pêcheurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+2. COLOMBE CANNELLE (Lv.6) - Village de Pêcheurs (Jetée Est)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 27-880
+
+3. DIAMANT À DOUBLE BARRE (Lv.3) - Village de Pêcheurs (Phare)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+4. MOUCHEROLLE À VENTRE JAUNE (Lv.5) - Village de Pêcheurs (Quai)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+5. PARADOXORNIS DE PRZEWALSKI (Lv.4) - Village de Pêcheurs (Place du Village)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+6. SITTELLE (Lv.2) - Village de Pêcheurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE MONTAGNE ONSEN - 8 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. FAUCON PÈLERIN (Lv.7) - Montagne Onsen (Source Chaude)
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 65-2080
+
+2. FAISAN À VENTRE BLANC - Montagne Onsen (Ruines)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 17-560
+
+3. HIBOU MOYEN-DUC (Lv.6) - Montagne Onsen (Falaise rocheuse)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 47-1520
+
+4. MÉSANGE CHARBONNIÈRE (Lv.2) - Montagne Onsen
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+5. PANURE À MOUSTACHES (Lv.1) - Montagne Onsen
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+6. PIGEON OLIVE D'AFRIQUE (Lv.5) - Montagne Onsen (Source Chaude)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 27-880
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE ZONE CENTRALE - 3 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PIGEON COLOMBIN (Lv.2) - Zone centrale
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+2. ROUGE-GORGE (Lv.1) - Zone centrale
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX DE MAISON - 2 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. LORIOT D'EUROPE (Lv.3) - Maison
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+2. TOURTERELLE TURQUE EURASIENNE (Lv.1) - Maison
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX D'ÉVÉNEMENT - 4 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ARA BLEU ET JAUNE - Événement Retour des oiseaux au nid
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 7-240
+
+2. ARA DE BUFFON - Événement Retour des oiseaux au nid
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+3. ARA ROUGE ET VERT - Événement Retour des oiseaux au nid
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+4. PAON BLEU - Événement Retour des oiseaux au nid
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 10-320
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OISEAUX SPÉCIAUX - 3 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BERGERONNETTE GRISE (Lv.4) - Plage violette
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+2. GRAND FLAMANT (Lv.1) - Bord de l'eau
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 15-480
+
+3. MÉSANGE À LONGUE QUEUE (Lv.1) - Sur la tête de Blanc
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 2-64
+
+================================================================================
+
+OISEAUX RARES (Niveau 9):
+
+- CALLISTE PARADIS (Banlieue)
+- CANARD À TÊTE BLANCHE (Lac Volcanique)
+- CORMORAN IMPÉRIAL (Mer de l'Est/Mer Zéphyr)
+- FLAMANT ROSE AMÉRICAIN (Champ de Fleurs)
+
+================================================================================
+
+PAR NIVEAU:
+
+Lv.1: Canard Colvert, Carpophage Blanc, Colombar à Cou Rose, Grand Flamant,
+      Loriot d'Europe, Mésange à Longue Queue, Panure à Moustaches, 
+      Pigeon de Wonga, Rouge-gorge, Tourterelle Turque Eurasienne, Troglodyte
+
+Lv.2: Bouvreuil Pivoine, Canard Siffleur, Mésange Charbonnière, 
+      Pie-grièche à Tête Rousse, Pigeon Colombin, Pinson des Arbres, Sittelle
+
+Lv.3: Cormoran Huppé, Diamant à Double Barre, Eider royal, 
+      Goéland d'Audouin, Mésange à menton argent, Tadorne Casarca
+
+Lv.4: Bergeronnette Grise, Durbec des Sapins, Harle Piette, 
+      Jardinier Prince-régent, Paradoxornis de Przewalski
+
+Lv.5: Guêpier d'Europe, Moucherolle à Ventre Jaune, Noddi Brun, 
+      Petit flamant, Pigeon Olive d'Afrique
+
+Lv.6: Colombe Cannelle, Cormoran à Face Rouge, Gros-bec, 
+      Hibou Moyen-duc
+
+Lv.7: Colombe jambu, Faucon Crécerelle, Faucon Pèlerin, Merle bleu de l'Est, 
+      Mésange Azurée, Pigeon Rose, Sizerin, Sterne
+
+Lv.9: Calliste Paradis, Canard à tête blanche, Cormoran Impérial, 
+      Flamant rose américain
+
+Sans niveau: Ara Bleu et Jaune, Ara de Buffon, Ara rouge et vert, 
+             Faisan à ventre blanc, Mouette, Paon Bleu, Ptilope de Wallace

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="cuisine" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="argent.html">Faire de l'argent</a></li>
+                        <li><a href="passions.html">Passions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="cuisine-content" class="tasks">
+            <div class="container">
+                <div class="back-link">
+                    <a href="passions.html">← Retour aux Passions</a>
+                </div>
+                <h2>🍳 Guide Complet de Cuisine</h2>
+                
+                <!-- Légende -->
+                <div class="fish-legend">
+                    <h3>📖 Légende</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <strong>Qualité:</strong> ★ (1 étoile) • ★★ (2 étoiles) • ★★★ (3 étoiles) • ★★★★ (4 étoiles) • ★★★★★ (5 étoiles)
+                        </div>
+                        <div class="legend-item">
+                            <strong>Prix:</strong> 💰 = Prix de vente selon la qualité
+                        </div>
+                        <div class="legend-item">
+                            <strong>Spécial:</strong> ✨ = Buff spécial | 🎯 = Recette Combo | ⭐ = Rares
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barre de recherche -->
+                <div class="fish-search">
+                    <input type="text" id="recipeSearch" placeholder="🔍 Rechercher une recette par nom, niveau, ingrédient..." />
+                    <div class="search-filters">
+                        <button class="filter-btn active" data-filter="all">📋 Tous</button>
+                        <button class="filter-btn" data-filter="lv1">Lv.1</button>
+                        <button class="filter-btn" data-filter="lv2">Lv.2</button>
+                        <button class="filter-btn" data-filter="lv3">Lv.3-5</button>
+                        <button class="filter-btn" data-filter="lv6">Lv.6+</button>
+                        <button class="filter-btn" data-filter="combo">🎯 Combos</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+
+        <!-- NIVEAU 1 SECTION -->
+                <div class="fish-section" data-level="lv1">
+                    <h3>⭐ NIVEAU 1 - Recettes Basiques</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Confiture de Pomme</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Pomme x4</p>
+                            <p class="fish-price">💰 270-1080 | Énergie: +70</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Boisson Étrange</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">⚠️ Chauffage manqué</p>
+                            <p class="fish-price">💰 30 | Énergie: +10</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Nourriture Étrange</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">⚠️ Chauffage manqué</p>
+                            <p class="fish-price">💰 30 | Énergie: +10</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tarte à la Truffe Noire</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Truffe x2 Blé Œuf</p>
+                            <p class="fish-price">💰 830-1660 | Coût: 195 | Énergie: +160</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Gâteau aux Myrtilles</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Œuf Lait Myrtille x2</p>
+                            <p class="fish-price">💰 570-1140 | Coût: 450 | Énergie: +96</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Confiture de Myrtilles</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Myrtille x4</p>
+                            <p class="fish-price">💰 170-340 | Énergie: +44</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tarte aux Champignons</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Champignon x2 Blé Œuf</p>
+                            <p class="fish-price">💰 500-1000 | Coût: 195 | Énergie: +70</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Café</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Café x4</p>
+                            <p class="fish-price">💰 290-580 | Coût: 200 | Énergie: +56</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Café Latte</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Café x2 Lait x2</p>
+                            <p class="fish-price">💰 300-600 | Coût: 200 | Énergie: +56</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Fish and Chips</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-info">Poisson x2 Pomme de terre x2</p>
+                            <p class="fish-price">💰 310-620 | Coût: 60 | Énergie: +56</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIVEAU 2 SECTION -->
+                <div class="fish-section" data-level="lv2">
+                    <h3>⭐⭐ NIVEAU 2 - Recettes Intermédiaires</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Tarte au Fromage</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-info">Fromage Blé Lait x2</p>
+                            <p class="fish-price">💰 480-960 | Coût: 245 | Énergie: +50</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Confiture de Mandarine</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-info">Mandarine x4</p>
+                            <p class="fish-price">💰 270-540 | Énergie: +70</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Confiture Mélangée</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-info">Pomme Myrtille Raisin Mandarine</p>
+                            <p class="fish-price">💰 160-320 | Énergie: +35</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Bagel au Poisson Fumé</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-info">Poisson Fromage Poivron Blé</p>
+                            <p class="fish-price">💰 520-1040 | Coût: 245 | Énergie: +50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIVEAUX 3-5 SECTION -->
+                <div class="fish-section" data-level="lv3">
+                    <h3>⭐⭐⭐ NIVEAUX 3-5 - Recettes Avancées</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Pâtes à la Crème de Truffe Noire</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-info">Truffe x2 Crème x2</p>
+                            <p class="fish-price">💰 400-1200 | Énergie: +100</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Ratatouille Rustique</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-info">Aubergine Courgette Tomate Oignon</p>
+                            <p class="fish-price">💰 350-1050 | Énergie: +95</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Risotto Fruits de Mer</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-info">Crevette x2 Poisson Riz</p>
+                            <p class="fish-price">💰 600-1800 | Énergie: +120</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tarte aux Pommes</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-info">Pomme x2 Beurre Pâte</p>
+                            <p class="fish-price">💰 500-1500 | Énergie: +110</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Gâteau aux Carottes ✨</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-info">Carotte x2 Œuf Sucre | Buff: Energy Burst</p>
+                            <p class="fish-price">💰 650-1950 | Énergie: +130</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Soupe de Maïs ✨</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-info">Maïs x2 Oignon Bouillon | Buff: Buff Énergie</p>
+                            <p class="fish-price">💰 600-1800 | Énergie: +120</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIVEAUX 6+ SECTION -->
+                <div class="fish-section" data-level="lv6">
+                    <h3>⭐⭐⭐⭐ NIVEAUX 6+ - Recettes Deluxe</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Plateau Fruits de Mer Luxe ✨</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-info">Crevette x2 Poisson Homard | Buff: Mighty Strength</p>
+                            <p class="fish-price">💰 1000-3000 | Énergie: +180</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tiramisu</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-info">Café x2 Fromage Cacao</p>
+                            <p class="fish-price">💰 900-2700 | Énergie: +160</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Sashimi de Langoustine</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-info">Langoustine x2 Citron Riz | Buff: x3 portions</p>
+                            <p class="fish-price">💰 1200-3600 | Énergie: +170</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Burger de Viande ✨</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-info">Viande x2 Pain Fromage | Buff: Fully Pumped</p>
+                            <p class="fish-price">💰 1500-4500 | Énergie: +190</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Aubergine Farcie à la Viande ✨</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-info">Aubergine Viande Oignon Ail | Buff: Fully Pumped</p>
+                            <p class="fish-price">💰 1300-3900 | Énergie: +185</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crabe Royal à la Vapeur</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-info">Crabe x2 Citron Ail</p>
+                            <p class="fish-price">💰 1800-5400 | Énergie: +210</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Thé Noir Mellow</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-info">Thé x2 Miel Citron</p>
+                            <p class="fish-price">💰 1600-4800 | Énergie: +200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Milk-shake</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-info">Lait x2 Fruit Sucre</p>
+                            <p class="fish-price">💰 1400-4200 | Énergie: +175</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RECETTES COMBOS -->
+                <div class="fish-section" data-level="combo">
+                    <h3>🎯 RECETTES SPÉCIALES - Menus Combos</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card legendary">
+                            <h4>Thé de l'Après-Midi</h4>
+                            <p class="fish-level">Niveau 7 - COMBO</p>
+                            <p class="fish-info">☕ Ingrédients: Tiramisu + Fruits/Légumes</p>
+                            <p class="fish-price">💰 710-5680 | Énergie: +150</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Plateau Pique-Nique</h4>
+                            <p class="fish-level">Niveau 7 - COMBO</p>
+                            <p class="fish-info">🧺 Ingrédients: Pizza + Tarte + Fish & Chips + Boisson</p>
+                            <p class="fish-price">💰 2260-18080 | Énergie: +200</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Dîner aux Chandelles</h4>
+                            <p class="fish-level">Niveau 9 - COMBO</p>
+                            <p class="fish-info">🕯️ Ingrédients: Salade + Bagel + Risotto + Tiramisu</p>
+                            <p class="fish-price">💰 1760-14080 | Énergie: +150</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Thé de l'Après-Midi Exquis</h4>
+                            <p class="fish-level">Niveau 12 - COMBO EXQUIS</p>
+                            <p class="fish-info">☕ Ingredients Composito Premium</p>
+                            <p class="fish-price">💰 3000-9000 | Énergie: +220</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Thé Vert Rafraîchissant</h4>
+                            <p class="fish-level">Niveau 13 - COMBO SUPÉRIEUR</p>
+                            <p class="fish-info">🍃 Recette Niveau Maximum</p>
+                            <p class="fish-price">💰 3500-10500 | Énergie: +250</p>
+                        </div>
+        </div>
+
+
+                <div class="fish-note">
+                    <p><strong>📝 Note:</strong> Les recettes spéciales avec le symbole ✨ ont des buffs de combat ou d'énergie supplémentaires.</p>
+                    <p><strong>💡 Astuce:</strong> Les recettes combo nécessitent plusieurs plats déjà préparés. Planifiez l'ordre de cuisson en conséquence!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction de recherche de recettes
+        const searchInput = document.getElementById('recipeSearch');
+        const searchResults = document.getElementById('searchResults');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const recipeCards = document.querySelectorAll('.fish-card');
+        const recipeSections = document.querySelectorAll('.fish-section');
+        
+        let currentFilter = 'all';
+        
+        // Fonction de recherche
+        function searchRecipe() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+            
+            if (searchTerm === '') {
+                searchResults.style.display = 'none';
+                applyFilter(currentFilter);
+                return;
+            }
+            
+            searchResults.style.display = 'block';
+            searchResults.innerHTML = '';
+            
+            recipeCards.forEach(card => {
+                const recipeName = card.querySelector('h4').textContent.toLowerCase();
+                const recipeLevel = card.querySelector('.fish-level').textContent.toLowerCase();
+                const recipeInfo = card.querySelector('.fish-info').textContent.toLowerCase();
+                
+                if (recipeName.includes(searchTerm) || 
+                    recipeLevel.includes(searchTerm) || 
+                    recipeInfo.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Afficher/masquer les sections
+            recipeSections.forEach(section => {
+                const visibleCardsInSection = Array.from(section.querySelectorAll('.fish-card'))
+                    .filter(card => card.style.display !== 'none').length;
+                section.style.display = visibleCardsInSection > 0 ? 'block' : 'none';
+            });
+            
+            // Afficher le résultat
+            if (visibleCount === 0) {
+                searchResults.innerHTML = '<p class="no-results">❌ Aucune recette trouvée pour "' + searchTerm + '"</p>';
+            } else {
+                searchResults.innerHTML = '<p class="search-count">✓ ' + visibleCount + ' recette(s) trouvée(s)</p>';
+            }
+        }
+        
+        // Fonction de filtre
+        function applyFilter(filter) {
+            currentFilter = filter;
+            
+            if (filter === 'all') {
+                recipeCards.forEach(card => card.style.display = 'block');
+                recipeSections.forEach(section => section.style.display = 'block');
+            } else if (filter === 'combo') {
+                recipeCards.forEach(card => {
+                    card.style.display = card.classList.contains('legendary') ? 'block' : 'none';
+                });
+                recipeSections.forEach(section => {
+                    if (section.dataset.level === 'combo') {
+                        section.style.display = 'block';
+                    } else {
+                        const visibleCards = Array.from(section.querySelectorAll('.fish-card.legendary'));
+                        section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                    }
+                });
+            } else {
+                // Filtrer par niveau
+                recipeSections.forEach(section => {
+                    if (section.dataset.level === filter) {
+                        section.style.display = 'block';
+                        section.querySelectorAll('.fish-card').forEach(card => card.style.display = 'block');
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchResults.style.display = 'none';
+        }
+        
+        // Event listeners
+        searchInput.addEventListener('keyup', searchRecipe);
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Mettre à jour l'état actif
+                filterButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                applyFilter(this.dataset.filter);
+            });
+        });
+    </script>
+</body>
+</html>

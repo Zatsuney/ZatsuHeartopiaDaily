@@ -1,0 +1,343 @@
+LÉGENDE:
+- Lv. = Niveau de Pêche
+- Emplacement = Lieu où pêcher
+- Ombre = Taille de l'ombre (S=Small, M=Medium, L=Large, Blue, Golden)
+- Météo: 🌞 Sunny | 🌧️ Rainy | 🌈 Rainbow
+- Horaires: 🌙 Night | 🌅 Dawn | ☀️ Day | 🌇 Dusk
+
+================================================================================
+
+PAR EMPLACEMENT:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LACS (Lake):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ABLETTE (Lv.1) - Lac
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+2. CARPE ARGENTÉE (Lv.1) - Lac de banlieue
+   Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+3. CARPE NOIRE (Lv.1) - Lac
+   Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+4. CHABOT (Lv.7) - Lac de Montagne Thermale
+   Ombre: S | Météo: 🌧️🌈 | Horaires: 🌅☀️🌇 | Prix: 150-1200
+
+2. CRABE DE RUISSEAU (Lv.4) - Lac de banlieue
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+6. CRAPET ARLEQUIN (Lv.10) - Lac de Montagne Thermale
+   Ombre: S | Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 395-790
+
+7. CRAPET-SOLEIL (Lv.9) - Lac de Montagne Thermale
+   Ombre: S | Météo: 🌞🌈 | Horaires: 🌅☀️🌇 | Prix: 250-1000
+
+8. ÉCREVISSE NOBLE (Lv.3) - Lac de la forêt
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅🌇 | Prix: 100-800
+
+9. ÉCREVISSE NOBLE BLEUE (Lv.8) - Lac de la forêt
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌇 | Prix: 250-1000
+
+10. ÉPERLAN (Lv.1) - Lac dans la prairie
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+11. GRAND BLACK-BASS (Lv.2) - Lac de la forêt
+    Ombre: M | Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 230-1840
+
+12. GRANDE HUÎTRE PERLIÈRE (Lv.6) - Lac de la forêt
+    Ombre: M | Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 380-1520
+
+13. GRÉMILLE (Lv.3) - Lac de Montagne Thermale
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: ☀️🌇 | Prix: 100-800
+
+14. GRENOUILLE EUROPÉENNE (Lv.3) - Lac
+    Ombre: Blue | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+15. KOÏ PAPILLON (Lv.4) - Lac dans la prairie
+    Ombre: L | Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+16. LOCHE DES ROCHERS (Lv.2) - Lac de banlieue
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+17. MOULE (Lv.3) - Lac de banlieue
+    Ombre: S | Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+18. OMBLE CHEVALIER (Lv.10) - Lac de la forêt
+    Ombre: M | Météo: 🌧️🌈 | Horaires: ☀️🌇 | Prix: 610-2440
+
+19. OMBRE COMMUN (Lv.6) - Lac de banlieue
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 230-1840
+
+20. POISSON ROUGE (Lv.8) - Lac dans la prairie
+    Ombre: S | Météo: 🌧️🌈 | Horaires: 🌅☀️🌇 | Prix: 250-1000
+
+21. POISSON-CHIEN (Lv.8) - Lac de banlieue
+    Ombre: S | Météo: 🌞🌈 | Horaires: 🌙🌅 | Prix: 250-1000
+
+22. ROTENGLE (Lv.5) - Lac de banlieue
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+23. SILURE GLANE (Lv.10) - Lac dans la prairie
+    Ombre: M | Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 610-2440
+
+24. TANCHE DORÉE (Lv.1) - Lac de la forêt
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+25. TÊTARD (Lv.3) - Lac de Montagne Thermale
+    Ombre: S | Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+26. TRUITE (Lv.5) - Lac dans la prairie
+    Ombre: M | Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 230-1840
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RIVIÈRES (River):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. BARBILLON (Lv.1) - Rivière peu profonde
+   Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+2. BLENNIE FLUVIATILE (Lv.5) - Rivière Aurore
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+3. CARPE COMMUNE (Lv.4) - Rivière Aurore
+   Ombre: M | Météo: 🌞🌈 | Horaires: ☀️🌇 | Prix: 230-1840
+
+4. CREVETTE VERTE (Lv.1) - Rivière
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+5. ÉPINOCHE (Lv.7) - Rivière peu profonde
+   Ombre: S | Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+6. HUCHON (Lv.9) - Fleuve d'arbres géants
+   Ombre: M | Météo: 🌈 | Horaires: 🌙☀️🌇 | Prix: 380-1520
+
+7. LOCHE DES FLEURS (Lv.1) - Fleuve d'arbres géants
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+8. LOTTE (Lv.4) - Rivière calme
+   Ombre: L | Météo: 🌞🌧️🌈 | Horaires: ☀️🌇 | Prix: 230-1840
+
+9. PERCHE DE RIVIÈRE (Lv.1) - Rivière
+   Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+10. PIRANHA À VENTRE ROUGE (Lv.4) - Fleuve d'arbres géants
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 230-1840
+
+11. SAUMON KÉTA (Lv.6) - Rivière calme
+    Ombre: S | Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+12. SANDRE BLANC (Lv.3) - Fleuve d'arbres géants
+    Ombre: M | Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 230-1840
+
+13. TILAPIA (Lv.3) - Rivière
+    Ombre: Blue | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+14. VAIRON (Lv.1) - Rivière calme
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+15. ZINGEL STREBER (Lv.3) - Rivière Aurore
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OCÉANS & MERS (Sea):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ANGUILLE D'EUROPE (Lv.7) - Ancienne Mer
+   Ombre: M | Météo: 🌈 | Horaires: 🌅☀️🌇 | Prix: 380-1520
+
+2. APHANIUS DE CORSE (Lv.7) - Suburban Lake
+   Ombre: S | Météo: 🌞🌈 | Horaires: 🌙☀️🌇 | Prix: 150-1200
+
+3. BAUDROIE (Lv.2) - Mer
+   Ombre: Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+4. BERNARD-L'ERMITE (Lv.3) - Mer de l'est
+   Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+5. BONITE (Lv.1) - Océan
+   Ombre: L | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 210-1680
+
+6. CALMAR VOLANT (Lv.5) - Mer
+   Ombre: Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+7. CHIMÈRE ARGENTÉE (Lv.4) - Océan
+   Ombre: Blue | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+8. COMÈTE COUSSUT (Lv.2) - Mer calme
+   Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 155-1240
+
+9. CRABE ROYAL (Lv.8) - Mer de baleine
+   Ombre: L | Météo: 🌈 | Horaires: 🌅☀️🌇 | Prix: 535-4280
+
+10. CRABE ROYAL DORÉ (Lv.8) - Mer
+    Ombre: Golden | Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 850-3400
+
+11. CREVETTES DE MER (Lv.1) - Mer de l'est
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+12. DAURADE (Lv.10) - Mer calme
+    Ombre: M | Météo: 🌧️🌈 | Horaires: 🌙🌇 | Prix: [Prix manquant]
+
+13. ÉGLEFIN (Lv.8) - Mer de l'est
+    Ombre: M | Météo: 🌞🌈 | Horaires: 🌙☀️🌇 | Prix: 230-1840
+
+14. ÉPINOCHE DE MER (Lv.1) - Ancienne Mer
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+15. ESPADON (Lv.10) - Mer de baleine
+    Ombre: L | Météo: 🌈 | Horaires: 🌅☀️ | Prix: 850-3400
+
+16. GOBIE (Lv.4) - Mer de l'est
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌅☀️ | Prix: 150-1200
+
+17. GRONDIN PERLON (Lv.6) - Mer de l'est
+    Ombre: M | Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 380-1520
+
+18. HIPPOCAMPE (Lv.1) - Mer de baleine
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️ | Prix: 100-800
+
+19. HOMARD EUROPÉEN (Lv.5) - Mer calme
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌇 | Prix: 230-1840
+
+20. LAMPRIS-LUNE (Lv.9) - Mer
+    Ombre: Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌇 | Prix: 850-3400
+
+21. MAQUEREAU COMMUN (Lv.5) - Mer de baleine
+    Ombre: S | Météo: 🌞🌈 | Horaires: ☀️🌇 | Prix: 150-1200
+
+22. PAGELLUS BOGARAVEO (Lv.7) - Mer calme
+    Ombre: M | Météo: 🌧️🌈 | Horaires: 🌙🌇 | Prix: 230-1840
+
+23. PERCHE DE MER (Lv.1) - Océan
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+24. PIEUVRE (Lv.2) - Mer
+    Ombre: M, Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+25. PIEUVRE NAINE ATLANTIQUE (Lv.2) - Mer calme
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+26. PLIE COMMUNE (Lv.4) - Ancienne Mer
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅🌇 | Prix: 230-1840
+
+27. POISSON SABRE (Lv.1) - Mer calme
+    Ombre: L | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 105-840
+
+28. POISSON-CLOWN (Lv.3) - Ancienne Mer
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 100-800
+
+29. POISSON-LUNE (Lv.9) - Mer de l'est
+    Ombre: L | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅 | Prix: 850-3400
+
+30. RÉGALEC (Lv.7) - Mer
+    Ombre: Golden | Météo: 🌞🌧️🌈 | Horaires: 🌅☀️ | Prix: 535-4280
+
+31. REQUIN MAKO (Lv.10) - Mer
+    Ombre: L | Météo: 🌈 | Horaires: 🌅☀️ | Prix: 850-3400
+
+32. REQUIN MARTEAU (Lv.10) - Ancienne Mer
+    Ombre: L | Météo: 🌈 | Horaires: 🌙🌇 | Prix: [Prix manquant]
+
+33. ROUGET-BARBET (Lv.1) - Mer
+    Ombre: Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+34. ROUSSETTE (Lv.6) - Mer
+    Ombre: L, Golden | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 535-4280
+
+35. SARDINE (Lv.1) - Océan
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+36. SAUMON ATLANTIQUE (Lv.3) - Mer de baleine
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙☀️🌇 | Prix: 155-1240
+
+37. SAUREL (Lv.1) - Mer de baleine
+    Ombre: S | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 50-400
+
+38. TÉTRAODON (Lv.6) - Ancienne Mer
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: ☀️🌇 | Prix: 230-1840
+
+39. THON ROUGE (Lv.9) - Mer calme
+    Ombre: L | Météo: 🌈 | Horaires: 🌅☀️ | Prix: 850-3400
+
+40. TURBOT (Lv.4) - Mer
+    Ombre: M | Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 320-2560
+
+================================================================================
+
+PAR NIVEAU DE PÊCHE:
+
+Lv. 1: Ablette, Aphanius de Corse, Barbeau, Bonite, Carpe argentée, Carpe noire,
+       Crevette verte, Crevettes de mer, Éperlan, Épinoche de mer, Féra, Gobie,
+       Hippocampe, Perche de mer, Perche de rivière, Poisson sabre, Sardine,
+       Saurel, Tanche dorée
+
+Lv. 2: Baudroie, Bernard-l'Ermite, Comète coussut, Grand black-bass, Loche des rochers,
+       Pieuvre, Pieuvre naine atlantique
+
+Lv. 3: Acantharchus pomotis, Crabe de ruisseau, Écrevisse noble, Grenouille européenne,
+       Grémille, Poisson-clown, Sandre blanc, Saumon atlantique, Têtard, Tilapia,
+       Zingel streber
+
+Lv. 4: Carpe commune, Chimère argentée, KOÏ papillon, Lotte, Plie commune,
+       Turbot
+
+Lv. 5: Blennie fluviatile, Calmar volant, Homard européen, Maquereau commun,
+       Rotengle, Truite
+
+Lv. 6: Écrevisse noble bleue, Grande huître perlière, Grondin Perlon,
+       Ombre commun, Roussette, Saumon Kéta, Tétraodon
+
+Lv. 7: Anguille d'Europe, Aphanius de Corse, Chabot, Épinoche, Pagellus bogaraveo,
+       Régalec
+
+Lv. 8: Crabe royal, Crabe royal doré, Églefin, Poisson rouge, Poisson-chien
+
+Lv. 9: Brochet tacheté, Crapet-soleil, Huchon, Lampris-lune, Poisson-lune, Thon rouge
+
+Lv. 10: Crapet arlequin, Omble chevalier, Requin mako, Requin marteau,
+        Silure glane, Espadon, Daurade
+
+================================================================================
+
+PAR TYPE D'OMBRE:
+
+SMALL (S):
+Ablette, Acantharchus pomotis, Aphanius de Corse, Bernard-l'Ermite, Blennie fluviatile,
+Chabot, Crabe de ruisseau, Crapet arlequin, Crapet-soleil, Crevette verte,
+Crevettes de mer, Écrevisse noble, Écrevisse noble bleue, Grémille, Hippocampe,
+Loche des fleurs, Loche des rochers, Moule, Pieuvre naine atlantique, Poisson-clown,
+Poisson rouge, Sardine, Saurel, Têtard, Zingel streber
+
+MEDIUM (M):
+Barbillon, Carpe argentée, Carpe commune, Carpe noire, Chabot, Comète coussut,
+Crabe de ruisseau, Écrevisse une, Églefin, Féra, Grondin Perlon, Huchon,
+Lotte, Omble chevalier, Ombre commun, Pagellus bogaraveo, Perche de mer,
+Perche de rivière, Pieuvre, Piranha à ventre rouge, Plie commune, Rotengle,
+Saumon atlantique, Sandre blanc, Tétraodon, Turbot
+
+LARGE (L):
+Bonite, KOÏ papillon, Lotte, Poisson sabre, Poisson-lune, Requin mako,
+Requin marteau, Roussette, Thon rouge
+
+BLUE:
+Chimère argentée, Grenouille européenne, Tilapia
+
+GOLDEN:
+Baudroie, Calmar volant, Crabe royal doré, Pieuvre, Rouget-barbet,
+Roussette, Régalec, Lampris-lune
+
+================================================================================
+
+POISSONS RARES (Golden Shadow):
+- Baudroie
+- Calmar volant
+- Crabe royal doré
+- Lampris-lune
+- Pieuvre
+- Régalec
+- Rouget-barbet
+- Roussette
+
+================================================================================

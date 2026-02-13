@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pêche - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="peche" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="argent.html">Faire de l'argent</a></li>
+                        <li><a href="passions.html">Passions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="peche-content" class="tasks">
+            <div class="container">
+                <div class="back-link">
+                    <a href="passions.html">← Retour aux Passions</a>
+                </div>
+                <h2>🎣 Guide Complet de la Pêche</h2>
+                
+                <!-- Légende -->
+                <div class="fish-legend">
+                    <h3>📖 Légende</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <strong>Ombre:</strong> S (Small) • M (Medium) • L (Large) • Blue • Golden
+                        </div>
+                        <div class="legend-item">
+                            <strong>Météo:</strong> 🌞 Ensoleillé • 🌧️ Pluvieux • 🌈 Arc-en-ciel
+                        </div>
+                        <div class="legend-item">
+                            <strong>Horaires:</strong> 🌙 Nuit • 🌅 Aube • ☀️ Jour • 🌇 Crépuscule
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barre de recherche -->
+                <div class="fish-search">
+                    <input type="text" id="fishSearch" placeholder="🔍 Rechercher un poisson par nom, niveau, emplacement..." />
+                    <div class="search-filters">
+                        <button class="filter-btn active" data-filter="all">Tous (85)</button>
+                        <button class="filter-btn" data-filter="lac">🏞️ Lacs (26)</button>
+                        <button class="filter-btn" data-filter="rivière">🌊 Rivières (15)</button>
+                        <button class="filter-btn" data-filter="mer">🌊 Mers (40)</button>
+                        <button class="filter-btn" data-filter="legendary">⭐ Légendaires (8)</button>
+                        <button class="filter-btn" data-filter="rare">💎 Rares (3)</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+
+                <!-- LACS -->
+                <div class="fish-section" data-location="lac">
+                    <h3>🏞️ LACS</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Ablette</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Lac</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Carpe Argentée</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Carpe Noire</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Lac</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Chabot</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Lac de Montagne Thermale</p>
+                            <p class="fish-info">Ombre: S | 🌧️🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crabe de Ruisseau</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crapet Arlequin</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Lac de Montagne Thermale</p>
+                            <p class="fish-info">Ombre: S | 🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 395-790</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crapet-Soleil</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Lac de Montagne Thermale</p>
+                            <p class="fish-info">Ombre: S | 🌞🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 250-1000</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Écrevisse Noble</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Écrevisse Noble Bleue</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 250-1000</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Éperlan</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Lac dans la prairie</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grand Black-Bass</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grande Huître Perlière</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: M | 🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 380-1520</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grémille</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Lac de Montagne Thermale</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Grenouille Européenne</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Lac</p>
+                            <p class="fish-info">Ombre: Blue | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Koï Papillon</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Lac dans la prairie</p>
+                            <p class="fish-info">Ombre: L | 🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Loche des Rochers</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Moule</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: S | 🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Omble Chevalier</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: M | 🌧️🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 610-2440</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Ombre Commun</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Poisson Rouge</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Lac dans la prairie</p>
+                            <p class="fish-info">Ombre: S | 🌧️🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 250-1000</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Poisson-Chien</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: S | 🌞🌈 | 🌙🌅</p>
+                            <p class="fish-price">💰 250-1000</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Rotengle</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Lac de banlieue</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Silure Glane</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Lac dans la prairie</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 610-2440</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tanche Dorée</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Lac de la forêt</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Têtard</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Lac de Montagne Thermale</p>
+                            <p class="fish-info">Ombre: S | 🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Truite</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Lac dans la prairie</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIVIÈRES -->
+                <div class="fish-section" data-location="rivière">
+                    <h3>🌊 RIVIÈRES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Barbillon</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Rivière peu profonde</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Blennie Fluviatile</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Rivière Aurore</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Carpe Commune</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Rivière Aurore</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crevette Verte</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Rivière</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Épinoche</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Rivière peu profonde</p>
+                            <p class="fish-info">Ombre: S | 🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Huchon</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Fleuve d'arbres géants</p>
+                            <p class="fish-info">Ombre: M | 🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 380-1520</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Loche des Fleurs</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Fleuve d'arbres géants</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Lotte</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Rivière calme</p>
+                            <p class="fish-info">Ombre: L | 🌞🌧️🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Perche de Rivière</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Rivière</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Piranha à Ventre Rouge</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Fleuve d'arbres géants</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Saumon Kéta</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Rivière calme</p>
+                            <p class="fish-info">Ombre: S | 🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Sandre Blanc</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Fleuve d'arbres géants</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Tilapia</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Rivière</p>
+                            <p class="fish-info">Ombre: Blue | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Vairon</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Rivière calme</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Zingel Streber</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Rivière Aurore</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- OCÉANS & MERS -->
+                <div class="fish-section" data-location="mer">
+                    <h3>🌊 OCÉANS & MERS</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>Anguille d'Europe</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: M | 🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 380-1520</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Baudroie ⭐</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Bernard-l'Ermite</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Bonite</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Océan</p>
+                            <p class="fish-info">Ombre: L | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 210-1680</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Calmar Volant ⭐</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>Chimère Argentée</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Océan</p>
+                            <p class="fish-info">Ombre: Blue | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Comète Coussut</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 155-1240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crabe Royal</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: L | 🌈 | 🌅☀️🌇</p>
+                            <p class="fish-price">💰 535-4280</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Crabe Royal Doré ⭐</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Crevettes de Mer</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Daurade</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: M | 🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 Prix manquant</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Églefin</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: M | 🌞🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Épinoche de Mer</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Espadon</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: L | 🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Gobie</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Grondin Perlon</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: M | 🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 380-1520</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Hippocampe</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Homard Européen</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Lampris-Lune ⭐</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌞🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Maquereau Commun</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: S | 🌞🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Pagellus Bogaraveo</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: M | 🌧️🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Perche de Mer</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Océan</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 75-600</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Pieuvre ⭐</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: M, Golden | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Pieuvre Naine Atlantique</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 150-1200</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Plie Commune</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Poisson Sabre</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: L | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 105-840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Poisson-Clown</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 100-800</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Poisson-Lune</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Mer de l'est</p>
+                            <p class="fish-info">Ombre: L | 🌞🌧️🌈 | 🌙🌅</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Régalec ⭐</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌞🌧️🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 535-4280</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Requin Mako</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: L | 🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Requin Marteau</h4>
+                            <p class="fish-level">Niveau 10</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: L | 🌈 | 🌙🌇</p>
+                            <p class="fish-price">💰 Prix manquant</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Rouget-Barbet ⭐</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: Golden | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                        <div class="fish-card legendary">
+                            <h4>Roussette ⭐</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: L, Golden | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 535-4280</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Sardine</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Océan</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Saumon Atlantique</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙☀️🌇</p>
+                            <p class="fish-price">💰 155-1240</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Saurel</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">📍 Mer de baleine</p>
+                            <p class="fish-info">Ombre: S | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 50-400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Tétraodon</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">📍 Ancienne Mer</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | ☀️🌇</p>
+                            <p class="fish-price">💰 230-1840</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Thon Rouge</h4>
+                            <p class="fish-level">Niveau 9</p>
+                            <p class="fish-location">📍 Mer calme</p>
+                            <p class="fish-info">Ombre: L | 🌈 | 🌅☀️</p>
+                            <p class="fish-price">💰 850-3400</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>Turbot</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">📍 Mer</p>
+                            <p class="fish-info">Ombre: M | 🌞🌧️🌈 | 🌙🌅☀️🌇</p>
+                            <p class="fish-price">💰 320-2560</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-note">
+                    <p><strong>📝 Note:</strong> Les poissons marqués d'une étoile ⭐ sont des poissons légendaires avec une ombre dorée (Golden).</p>
+                    <p><strong>💡 Astuce:</strong> Certains poissons n'apparaissent que dans des conditions météorologiques ou horaires spécifiques. Planifiez vos sessions de pêche en conséquence!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction de recherche de poissons
+        const searchInput = document.getElementById('fishSearch');
+        const searchResults = document.getElementById('searchResults');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const fishCards = document.querySelectorAll('.fish-card');
+        const fishSections = document.querySelectorAll('.fish-section');
+        
+        let currentFilter = 'all';
+        
+        // Fonction de recherche
+        function searchFish() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+            
+            if (searchTerm === '') {
+                searchResults.style.display = 'none';
+                applyFilter(currentFilter);
+                return;
+            }
+            
+            searchResults.style.display = 'block';
+            searchResults.innerHTML = '';
+            
+            fishCards.forEach(card => {
+                const fishName = card.querySelector('h4').textContent.toLowerCase();
+                const fishLevel = card.querySelector('.fish-level').textContent.toLowerCase();
+                const fishLocation = card.querySelector('.fish-location').textContent.toLowerCase();
+                const fishInfo = card.querySelector('.fish-info').textContent.toLowerCase();
+                
+                if (fishName.includes(searchTerm) || 
+                    fishLevel.includes(searchTerm) || 
+                    fishLocation.includes(searchTerm) ||
+                    fishInfo.includes(searchTerm)) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Afficher/masquer les sections
+            fishSections.forEach(section => {
+                const visibleCardsInSection = Array.from(section.querySelectorAll('.fish-card'))
+                    .filter(card => card.style.display !== 'none').length;
+                section.style.display = visibleCardsInSection > 0 ? 'block' : 'none';
+            });
+            
+            // Afficher le résultat
+            if (visibleCount === 0) {
+                searchResults.innerHTML = '<p class="no-results">❌ Aucun poisson trouvé pour "' + searchTerm + '"</p>';
+            } else {
+                searchResults.innerHTML = '<p class="search-count">✓ ' + visibleCount + ' poisson(s) trouvé(s)</p>';
+            }
+        }
+        
+        // Fonction de filtre
+        function applyFilter(filter) {
+            currentFilter = filter;
+            
+            if (filter === 'all') {
+                fishCards.forEach(card => card.style.display = 'block');
+                fishSections.forEach(section => section.style.display = 'block');
+            } else if (filter === 'legendary') {
+                fishCards.forEach(card => {
+                    card.style.display = card.classList.contains('legendary') ? 'block' : 'none';
+                });
+                fishSections.forEach(section => {
+                    const visibleCards = Array.from(section.querySelectorAll('.fish-card.legendary'));
+                    section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                });
+            } else if (filter === 'rare') {
+                fishCards.forEach(card => {
+                    card.style.display = card.classList.contains('rare') ? 'block' : 'none';
+                });
+                fishSections.forEach(section => {
+                    const visibleCards = Array.from(section.querySelectorAll('.fish-card.rare'));
+                    section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                });
+            } else {
+                // Filtrer par emplacement
+                fishSections.forEach(section => {
+                    if (section.dataset.location === filter) {
+                        section.style.display = 'block';
+                        section.querySelectorAll('.fish-card').forEach(card => card.style.display = 'block');
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchResults.style.display = 'none';
+        }
+        
+        // Event listeners
+        searchInput.addEventListener('input', searchFish);
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.dataset.filter;
+                searchInput.value = '';
+                applyFilter(filter);
+            });
+        });
+        
+        // Réinitialiser la recherche au chargement
+        searchResults.style.display = 'none';
+    </script>
+</body>
+</html>

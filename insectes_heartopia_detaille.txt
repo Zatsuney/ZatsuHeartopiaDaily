@@ -1,0 +1,266 @@
+﻿LÉGENDE:
+- Lv. = Niveau de Capture
+- Emplacement = Lieu où capturer
+- Type = Catégorie d'insecte
+- Météo: 🌞 Ensoleillé | 🌧️ Pluvieux | 🌈 Arc-en-ciel
+- Horaires: 🌙 Nuit | 🌅 Aube | ☀️ Jour | 🌇 Crépuscule
+
+================================================================================
+
+PAR TYPE D'INSECTE:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PAPILLONS (Butterfly) - 28 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ACTIAS NEIDHOEDERI (Lv.3) - Banlieue
+   Météo: 🌞🌈 | Horaires: 🌅☀️🌇 | Prix: 105-300
+
+2. AZURÉ DE PORCELAINE (Lv.2) - Zone centrale
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 105-300
+
+3. CHARAXES JASUIS (Lv.5) - Montagne Onsen (Source Chaude)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️ | Prix: 90-720
+
+4. CHENILLE PORTE-CASE (Lv.10) - Forêt (Tour du Cerf)
+   Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 440-660
+
+5. CITRON ASPASIA (Lv.1) - Banlieue
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+6. COMÈTE PAPILLON DE NUIT (Lv.8) - Banlieue
+   Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 240-1920
+
+7. GRAND PAON DE NUIT (Lv.7) - Événement Appât à Insectes
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 150-1200
+
+8. ISABELLE (Lv.8) - Forêt (Forêt de chêne spirituels)
+   Météo: 🌞🌈 | Horaires: ☀️🌇 | Prix: 150-1200
+
+9. MÉLITÉE LÉOPARD (Lv.4) - Village de Pêcheurs (Quai)
+   Météo: 🌧️🌈 | Horaires: 🌙🌅🌇 | Prix: 90-720
+
+10. MORPHO BLEU (Lv.7) - Forêt (Forêt de chêne spirituels)
+    Météo: 🌞🌈 | Horaires: 🌅☀️🌇 | Prix: 150-1200
+
+11. MORPHO DE SULKOWSKY (Lv.1) - Événement Attireur d'Insectes
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 90-720
+
+12. MORPHO HELENA (Lv.10) - Champ de Fleurs (Plage violette)
+    Météo: 🌈 | Horaires: 🌅☀️ | Prix: 240-1920
+
+13. NACRÉ (Lv.9) - Champ de Fleurs (Champ aux Moulins)
+    Météo: 🌧️🌈 | Horaires: 🌙🌅 | Prix: 240-1920
+
+14. ORNITHOPTÈRE VERT (Lv.6) - Banlieue
+    Météo: 🌞🌧️🌈 | Horaires: 🌅☀️🌇 | Prix: 150-1200
+
+15. PAON-DU-JOUR (Lv.5) - Champ de Fleurs (Champ aux Moulins)
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 90-720
+
+16. PAPILLON À ANNEAUX ROUGES (Lv.1) - Événement Appât à Insectes
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+17. PAPILLON À COL ROUGE (Lv.3) - Maison
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅🌇 | Prix: 90-720
+
+18. PAPILLON BLANC (Lv.1) - Village de Pêcheurs
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+19. PAPILLON DORÉ (Lv.1) - Forêt
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+20. PAPILLON SOLEIL (Lv.10) - Forêt (Tour du Cerf)
+    Météo: 🌈 | Horaires: 🌅☀️ | Prix: ???
+
+21. PAPILLON SORCIÈRE BLANCHE (Lv.5) - Événement Appât à Insectes
+    Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 90-720
+
+22. PARNASSIEN (Lv.1) - Événement Appât à Insectes
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+23. PIÉRIDE DU CRESSON (Lv.1) - Zone centrale
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 30-240
+
+24. VANESSE VIOLETTE (Lv.3) - Champ de Fleurs (Montagne de baleine)
+    Météo: 🌞🌈 | Horaires: 🌙☀️🌇 | Prix: 90-720
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+COLÉOPTÈRES (Beetle) - 23 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CAPRICORNE DES MONTAGNES (Lv.5) - Île forestière
+   Météo: 🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 165-1320
+
+2. CAPRICORNE TIGRÉ (Lv.2) - Forêt
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 110-880
+
+3. CÉTOINE ÉTOILÉE (Lv.7) - Champ de Fleurs (Montagne de baleine)
+   Météo: 🌧️🌈 | Horaires: 🌅☀️ | Prix: 275-1100
+
+4. CÉTOINE ÉTOILÉE BLEUE (Lv.2) - Maison (Rochers)
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 165-1320
+
+5. CICINDÈLE VERTE (Lv.2) - Montagne Onsen
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 110-880
+
+6. COCCINELLE À QUATRE ÉTOILES (Lv.4) - Montagne Onsen (Lac Volcanique)
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 165-1320
+
+7. COCCINELLE À SEPT POINTS (Lv.2) - Banlieue
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 110-880
+
+8. COCCINELLE ASIATIQUE (Lv.5) - Forêt (Tour du Cerf)
+   Météo: 🌧️🌈 | Horaires: 🌙☀️🌇 | Prix: 165-1320
+
+9. CRIOCÈRE DE L'ASPERGE (Lv.1) - Champ de Fleurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 55-220
+
+10. LUCANE DORÉ SPECTRAL (Lv.9) - Forêt (Forêt de chêne spirituels)
+    Météo: 🌧️🌈 | Horaires: 🌙🌇 | Prix: 440-660
+
+11. LUCANUS (Lv.6) - Forêt (Puzzle de Saut)
+    Météo: 🌧️🌈 | Horaires: 🌅☀️🌇 | Prix: 275-1100
+
+12. PIOCHE ARC-EN-CIEL (Lv.9) - Événement Appât à Insectes (Ruines)
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 440-660
+
+13. PUNAISE PICASSO (Lv.8) - Champ de Fleurs (Plage violette)
+    Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 185-370
+
+14. PYROCHROA (Lv.3) - Montagne Onsen (Source Chaude)
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 110-880
+
+15. PYRRHOCORIS APTERUS (Lv.1) - Maison (Rochers)
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 35-280
+
+16. SCARABÉE ARGENTÉ AUX GEMMES (Lv.6) - Montagne Onsen (Falaise rocheuse)
+    Météo: 🌞🌈 | Horaires: 🌙🌅☀️ | Prix: 165-1320
+
+17. SCARABÉE DORÉ AUX GEMMES (Lv.7) - Forêt (Puzzle de Saut)
+    Météo: 🌞🌈 | Horaires: ☀️🌇 | Prix: 275-1100
+
+18. SCARABÉE HERCULE (Lv.10) - Montagne Onsen (Lac Volcanique)
+    Météo: 🌞🌈 | Horaires: ☀️🌇 | Prix: ???
+
+19. SCARABÉE SACRÉ (Lv.7) - Montagne Onsen (Ruines)
+    Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️ | Prix: 275-1100
+
+20. SCARABÉE UNICORNE (Lv.8) - Village de Pêcheurs (Jetée Est)
+    Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 275-1100
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+LIBELLULES (Dragonfly) - 6 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. AGRION DE VIRGINIE (Lv.6) - Rive du Lac Forestier
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 110-880
+
+2. GRAND AGRION (Lv.1) - Bord de l'eau
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 35-280
+
+3. LIBELLULE À QUEUE BLANCHE (Lv.4) - Berge de la Rivière
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+4. LIBELLULE ROSE (Lv.7) - Montagne Onsen
+   Météo: 🌈 | Horaires: 🌙☀️🌇 | Prix: 185-370
+
+5. LIBELLULE TACHETÉE (Lv.2) - Rive du Lac de Banlieue
+   Météo: 🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 75-600
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SAUTERELLES & MANTES (Grasshopper) - 8 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CRIQUET À AILES RÉTICULÉES (Lv.4) - Banlieue
+   Météo: 🌞🌈 | Horaires: 🌙🌇 | Prix: 140-1120
+
+2. CRIQUET AUX PATTES MASSIVES (Lv.2) - Village de Pêcheurs
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 90-720
+
+3. GRILLON (Lv.3) - Champ de Fleurs (Plage violette)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 180-360
+
+4. MANTE À TÊTE CONIQUE (Lv.9) - Montagne Onsen (Ruines)
+   Météo: 🌧️🌈 | Horaires: ☀️🌇 | Prix: 515
+
+5. MANTE ARC-EN-CIEL (Lv.4) - Montagne Onsen (Falaise rocheuse)
+   Météo: 🌞🌈 | Horaires: 🌙☀️🌇 | Prix: 195-1560
+
+6. MANTE PAPOUE (Lv.5) - Montagne Onsen (Ruines)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 390-1560
+
+7. SAUTERELLE DE L'OASIS (Lv.1) - Montagne Onsen
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 45-360
+
+8. SAUTERELLE ROSE (Lv.3) - Événement Appât à Insectes
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 90-720
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ABEILLES (Bee) - 3 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ABEILLE À QUEUE BLANCHE (Lv.3) - Forêt (Tour du Cerf)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 165-1320
+
+2. ABEILLE CHARPENTIÈRE (Lv.5) - Champ de Fleurs (Montagne de baleine)
+   Météo: 🌞🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 165-1320
+
+3. XYLOCOPE BLEU (Lv.9) - Village de Pêcheurs (Place du Village)
+   Météo: 🌈 | Horaires: 🌙🌇 | Prix: 440-660
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AUTRES INSECTES (Bug) - 3 espèces:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. CIGALE (Lv.4) - Forêt (Forêt de chêne spirituels)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙☀️🌇 | Prix: 220-880
+
+2. FOURMI (Lv.3) - Village de Pêcheurs (Place du Village)
+   Météo: 🌞🌧️🌈 | Horaires: 🌙🌅☀️🌇 | Prix: 220-880
+
+3. PUNAISE BLEUE (Lv.6) - Village de Pêcheurs (Phare)
+   Météo: 🌞🌧️🌈 | Horaires: 🌅☀️ | Prix: 110-880
+
+================================================================================
+
+INSECTES RARES (Niveau 10):
+
+- CHENILLE PORTE-CASE (Forêt - Tour du Cerf)
+- MORPHO HELENA (Champ de Fleurs - Plage violette) 
+- PAPILLON SOLEIL (Forêt - Tour du Cerf)
+- SCARABÉE HERCULE (Montagne Onsen - Lac Volcanique)
+
+================================================================================
+
+PAR NIVEAU:
+
+Lv.1: Citron aspasia, Grand agrion, Morpho de Sulkowsky, Papillon à anneaux rouges,
+      Papillon blanc, Papillon doré, Parnassien, Piéride du cresson, 
+      Pyrrhocoris apterus, Sauterelle de l'oasis
+
+Lv.2: Azuré de porcelaine, Bourdon, Capricorne tigré, Cétoine étoilée bleue,
+      Cicindèle verte, Coccinelle à Sept Points, Criquet aux pattes massives,
+      Libellule tachetée
+
+Lv.3: Abeille à queue blanche, Actias neidhoederi, Fourmi, Grillon,
+      Papillon à col rouge, Pyrochroa, Sauterelle Rose, Vanesse violette
+
+Lv.4: Cigale, Coccinelle à quatre étoiles, Criquet à ailes réticulées,
+      Libellule à queue blanche, Mante arc-en-ciel, Mélitée léopard
+
+Lv.5: Abeille Charpentière, Capricorne des montagnes, Charaxes jasuis,
+      Coccinelle Asiatique, Mante papoue, Paon-du-jour, Papillon sorcière blanche
+
+Lv.6: Agrion de Virginie, Lucanus, Ornithoptère Vert, Punaise Bleue,
+      Scarabée argenté aux gemmes
+
+Lv.7: Cétoine étoilée, Grand paon de nuit, Isabelle, Libellule rose, Morpho Bleu,
+      Scarabée doré aux gemmes, Scarabée sacré
+
+Lv.8: Comète papillon de nuit, Punaise Picasso, Scarabée unicorne
+
+Lv.9: Lucane doré spectral, Mante à tête conique, Nacré, Pioche arc-en-ciel,
+      Xylocope Bleu
+
+Lv.10: Chenille porte-case, Morpho Helena, Papillon soleil, Scarabée Hercule

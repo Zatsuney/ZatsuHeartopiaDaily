@@ -180,6 +180,11 @@ section {
     gap: 2rem;
 }
 
+.tasks-grid-5cols {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+}
+
 .task-card {
     background: white;
     border-radius: 10px;
@@ -192,6 +197,11 @@ section {
     min-height: 450px;
 }
 
+.tasks-grid-5cols .task-card {
+    padding: 1.125rem;
+    min-height: 337.5px;
+}
+
 .task-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
@@ -200,7 +210,11 @@ section {
 .task-card img {
     width: 100%;
     height: 200px;
-    object-fit: contain;
+ 
+
+.tasks-grid-5cols .task-card img {
+    height: 150px;
+}   object-fit: contain;
     background-color: #f0f0f0;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -351,4 +365,487 @@ footer {
     .hero p {
         font-size: 1rem;
     }
+}
+
+/* Task Card Link */
+.task-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.task-card-link:hover .task-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Passion Details */
+.back-link {
+    margin-bottom: 2rem;
+}
+
+.back-link a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.back-link a:hover {
+    color: #5568d3;
+}
+
+.passion-details {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.passion-image {
+    flex: 0 0 40%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.passion-description {
+    flex: 1;
+}
+
+.passion-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.passion-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.passion-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.passion-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.passion-section h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.passion-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.passion-section li {
+    margin-bottom: 1rem;
+    padding-left: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.passion-section strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .passion-details {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .passion-image {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Fish Guide Styles */
+.fish-legend {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fish-legend h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.legend-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.25rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.legend-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #ffeb3b;
+}
+
+.fish-section {
+    margin-bottom: 4rem;
+}
+
+.fish-section h3 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #667eea;
+    text-align: center;
+}
+
+.fish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.fish-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #667eea;
+}
+
+.fish-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(102, 126, 234, 0.2);
+}
+
+.fish-card h4 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.fish-level {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.fish-location {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.fish-info {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+
+.fish-price {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+/* Rare fish (Blue Shadow) */
+.fish-card.rare {
+    border-left: 4px solid #3498db;
+    background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%);
+}
+
+.fish-card.rare h4 {
+    color: #2980b9;
+}
+
+/* Legendary fish (Golden Shadow) */
+.fish-card.legendary {
+    border-left: 4px solid #f1c40f;
+    background: linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.fish-card.legendary::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+.fish-card.legendary h4 {
+    color: #d68910;
+}
+
+.fish-card.legendary .fish-level {
+    background: linear-gradient(135deg, #f1c40f 0%, #f39c12 100%);
+}
+
+.fish-note {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fish-note p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.fish-note p:last-child {
+    margin-bottom: 0;
+}
+
+.fish-note strong {
+    color: #ffeb3b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fish-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+    }
+    
+    .fish-section h3 {
+        font-size: 1.6rem;
+    }
+    
+    .legend-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .fish-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fish Search Styles */
+.fish-search {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#fishSearch, #bugSearch, #birdSearch, #recipeSearch {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+#fishSearch:focus, #bugSearch:focus, #birdSearch:focus, #recipeSearch:focus {
+    border-color: #667eea;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 0.7rem 1.5rem;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #555;
+}
+
+.filter-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.search-results {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.search-count {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.75rem;
+    background: #e8f5e9;
+    border-radius: 8px;
+}
+
+.no-results {
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0.75rem;
+    background: #ffebee;
+    border-radius: 8px;
+}
+
+/* Responsive Search */
+@media (max-width: 768px) {
+    .search-filters {
+        justify-content: flex-start;
+    }
+    
+    .filter-btn {
+        font-size: 0.85rem;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    #fishSearch {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-btn {
+        flex: 1 1 calc(50% - 0.375rem);
+        min-width: 140px;
+    }
+}
+
+/* Recipe-specific styles */
+.combo-buff {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.info-section {
+    background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%);
+    border-left: 4px solid #667eea;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.info-section ul {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-section li {
+    color: #555;
+    line-height: 1.6;
+}
+
+.price-table {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.price-table .price-row {
+    font-weight: 600;
+    color: #d4af37;
+    margin-bottom: 0.4rem;
+}
+
+.price-table .energy {
+    color: #e74c3c;
+    font-size: 0.85rem;
 }
