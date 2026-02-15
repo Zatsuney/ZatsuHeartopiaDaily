@@ -185,6 +185,11 @@ section {
     gap: 1.5rem;
 }
 
+.tasks-grid-4cols {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
 .task-card {
     background: white;
     border-radius: 10px;
@@ -230,6 +235,20 @@ section {
     color: #666;
     font-size: 0.9rem;
     flex-grow: 1;
+}
+
+.parcelles-grid {
+    grid-template-columns: minmax(560px, 880px);
+    justify-content: center;
+}
+
+.parcellesprix-card {
+    min-height: auto;
+}
+
+.parcellesprix-card img {
+    height: auto;
+    max-height: 640px;
 }
 
 /* Modal Zoom */
