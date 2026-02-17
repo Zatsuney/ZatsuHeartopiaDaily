@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Notes - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #patchnote-list {
+            grid-template-columns: 1fr;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        #patchnote-list .task-card {
+            width: 100%;
+            text-align: left;
+        }
+
+        #patchnote-list .task-card h3,
+        #patchnote-list .task-card .patchnote-date {
+            text-align: center;
+        }
+
+        .patchnote-body {
+            line-height: 1.6;
+            max-height: calc(1.6em * 6);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .patchnote-body::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 64px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+            pointer-events: none;
+        }
+
+        .task-card.expanded .patchnote-body {
+            max-height: none;
+        }
+
+        .task-card.expanded .patchnote-body::after {
+            display: none;
+        }
+
+        .patchnote-toggle {
+            margin-top: 0.75rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 8px;
+            background-color: #667eea;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="patch-notes" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="patchnote.html" class="active">Patch Notes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="patchnote-content" class="tasks">
+            <div class="container">
+                <h2>Patch Notes</h2>
+                <p id="patchnote-status" style="text-align:center; margin-bottom:1.5rem;">Chargement des dernières notes Steam…</p>
+                <div id="patchnote-list" class="tasks-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+<script>
+    (function () {
+        const appId = 4025700;
+        const count = 10;
+        const steamNewsUrl = 'https://store.steampowered.com/feeds/news/app/' + appId + '/?l=french';
+        const statusEl = document.getElementById('patchnote-status');
+        const listEl = document.getElementById('patchnote-list');
+
+        function formatDate(dateValue) {
+            const date = typeof dateValue === 'number' ? new Date(dateValue * 1000) : new Date(dateValue);
+            if (Number.isNaN(date.getTime())) {
+                return 'Date inconnue';
+            }
+            return date.toLocaleDateString('fr-FR', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric'
+            });
+        }
+
+        function escapeHtml(value) {
+            return (value || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function sanitizeHtml(html) {
+            const temp = document.createElement('div');
+            temp.innerHTML = html || '';
+            temp.querySelectorAll('script, style, iframe, object, embed, link, meta').forEach(function (el) {
+                el.remove();
+            });
+            temp.querySelectorAll('*').forEach(function (el) {
+                Array.from(el.attributes).forEach(function (attr) {
+                    const name = attr.name.toLowerCase();
+                    const value = (attr.value || '').trim().toLowerCase();
+                    if (name.startsWith('on')) {
+                        el.removeAttribute(attr.name);
+                        return;
+                    }
+                    if ((name === 'href' || name === 'src') && value.startsWith('javascript:')) {
+                        el.removeAttribute(attr.name);
+                    }
+                });
+            });
+            return temp.innerHTML;
+        }
+
+        function buildContentHtml(item) {
+            const htmlFromRss = item.content || item.description;
+            if (htmlFromRss) {
+                return sanitizeHtml(htmlFromRss);
+            }
+
+            const plainFromSteam = (item.contents || '')
+                .replace(/\[\/?(h1|h2|h3|b|i|u|list|\*|quote|url|img)\b[^\]]*\]/gi, '')
+                .replace(/\\n/g, '\n')
+                .trim();
+
+            if (!plainFromSteam) {
+                return '<p>Contenu indisponible.</p>';
+            }
+
+            const safeText = escapeHtml(plainFromSteam)
+                .replace(/\n\n+/g, '</p><p>')
+                .replace(/\n/g, '<br>');
+
+            return '<p>' + safeText + '</p>';
+        }
+
+        function renderNotes(items) {
+            if (!items || !items.length) {
+                statusEl.textContent = 'Aucune note de patch trouvée sur Steam pour le moment.';
+                listEl.innerHTML = '';
+                return;
+            }
+
+            statusEl.textContent = 'Dernières notes récupérées depuis Steam.';
+            listEl.innerHTML = items.map(function (item) {
+                const title = item.title || 'Patch note';
+                const fullContentHtml = buildContentHtml(item);
+                const date = formatDate(item.pubDate || item.date || 0);
+                const url = item.link || item.url || ('https://store.steampowered.com/news/app/' + appId);
+                return (
+                    '<article class="task-card">' +
+                        '<h3>' + title + '</h3>' +
+                        '<p class="patchnote-date"><strong>Date :</strong> ' + date + '</p>' +
+                        '<div class="patchnote-body">' + fullContentHtml + '</div>' +
+                        '<button type="button" class="patchnote-toggle">Voir plus</button>' +
+                        '<p><a href="' + url + '" target="_blank" rel="noopener noreferrer">Lire sur Steam</a></p>' +
+                    '</article>'
+                );
+            }).join('');
+        }
+
+        listEl.addEventListener('click', function (event) {
+            const button = event.target.closest('.patchnote-toggle');
+            if (!button) {
+                return;
+            }
+
+            const card = button.closest('.task-card');
+            if (!card) {
+                return;
+            }
+
+            card.classList.toggle('expanded');
+            button.textContent = card.classList.contains('expanded') ? 'Voir moins' : 'Voir plus';
+        });
+
+        async function fetchJson(url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error('HTTP ' + response.status);
+            }
+            return response.json();
+        }
+
+        async function loadPatchNotes() {
+            const rss2jsonUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(steamNewsUrl) + '&count=' + count;
+            const rss2jsonUrlAlt = rss2jsonUrl + '&t=' + Date.now();
+            const steamApiUrl = 'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=' + appId + '&count=' + count + '&format=json';
+
+            try {
+                const rssData = await fetchJson(rss2jsonUrl);
+                renderNotes(rssData && rssData.items ? rssData.items : []);
+                return;
+            } catch (errorRss) {}
+
+            try {
+                const rssDataAlt = await fetchJson(rss2jsonUrlAlt);
+                renderNotes(rssDataAlt && rssDataAlt.items ? rssDataAlt.items : []);
+                return;
+            } catch (errorRssAlt) {}
+
+            try {
+                const steamData = await fetchJson(steamApiUrl);
+                renderNotes(steamData && steamData.appnews && steamData.appnews.newsitems ? steamData.appnews.newsitems : []);
+                return;
+            } catch (errorSteam) {
+                statusEl.textContent = 'Impossible de charger les patch notes automatiquement.';
+                listEl.innerHTML = '<article class="task-card"><h3>Patch notes Steam</h3><p>Le chargement automatique a échoué. Si la page est ouverte en local (file://), certaines requêtes externes peuvent être bloquées par le navigateur.</p><p><a href="https://store.steampowered.com/news/app/4025700" target="_blank" rel="noopener noreferrer">Ouvrir les news Heartopia sur Steam</a></p></article>';
+            }
+        }
+
+        loadPatchNotes();
+    })();
+</script>
+</body>
+</html>
