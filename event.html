@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="event-page">
+    <main>
+        <section id="event" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="event.html" class="active">Event</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="event-content" class="tasks">
+            <div class="container">
+                <h2>🎉 Event</h2>
+                <div class="tasks-grid event-main-grid">
+                    <div class="task-card">
+                        <img src="event/mlp.png" alt="Event en cours">
+                        <h3>📅 Event en cours</h3>
+                        <p>Collab My Little Pony</p>
+                        <div class="event-article">
+                            <h4>Puissance d'arbre harmonieux</h4>
+                            <div class="event-article-content">
+                                <div class="event-article-row">
+                                    <img src="event/tree.png" alt="Tree" class="event-article-image zoomable-event-image">
+                                    <div class="event-article-text">
+                                        <p>Chaque jour, rends-toi à l'Arbre Harmonieux et récupère les fragments.<br>Arrose ensuite l'arbre pour progresser efficacement.<br>Utilise la résonance avec d'autres joueurs pour obtenir les fragments manquants.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="event-article">
+                            <h4>Produits dérivés</h4>
+                            <div class="event-article-content">
+                                <div class="event-article-row event-article-row-reverse">
+                                    <img src="event/produitderive.png" alt="Produits dérivés" class="event-article-image zoomable-event-image">
+                                    <div class="event-article-text">
+                                        <p>Durant l'événement, échange tes gemmes contre des insignes afin de compléter ta collection <legend>Les doublons peuvent être échanger entre joueurs</legend> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="event-subtasks-title">Collection de véhicules My Little Pony</h3>
+                <div class="tasks-grid tasks-grid-7cols event-subtasks">
+                    <div class="task-card">
+                        <h3>Twilight Sparkle</h3>
+                        <img src="event/twillightcar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card">
+                        <h3>Applejack</h3>
+                        <img src="event/applejackcar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card">
+                        <h3>Fluttershy</h3>
+                        <img src="event/fluttershycar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card">
+                        <h3>Rainbow Dash</h3>
+                        <img src="event/rainbowdashcar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card">
+                        <h3>Rarity</h3>
+                        <img src="event/raritycar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card">
+                        <h3>Pinkie Pie</h3>
+                        <img src="event/pinkiepiecar.png" alt="Event en cours">
+                    </div>
+                    <div class="task-card exclusive-vehicle-card">
+                        <h3>Véhicule Exclusif</h3>
+                        <img src="event/exclusivecar.png" alt="Event en cours">
+                        <p>Obtenez un véhicule exclusif en collectant tous les véhicules de l'événement.</p>
+                    </div>
+                </div>
+                <h3 class="event-subtasks-title">Bannières du moment</h3>
+                <div class="event-banners">
+                    <img src="event/banniereprairieluciole.png" alt="Bannière Prairie Luciole" class="event-banner-image zoomable-event-image">
+                    <img src="event/bannierecabane.png" alt="Bannière Cabane" class="event-banner-image zoomable-event-image">
+                    <img src="event/bannieresaveurs.png" alt="Bannière Saveurs" class="event-banner-image zoomable-event-image">
+                    <img src="event/bannieregout.png" alt="Bannière Goût" class="event-banner-image zoomable-event-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="">
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeBtn = document.querySelector('.close');
+        const zoomableImages = document.querySelectorAll('.zoomable-event-image');
+
+        zoomableImages.forEach(img => {
+            img.addEventListener('click', function () {
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+            });
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+        }
+
+        if (modal) {
+            modal.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -15,6 +15,7 @@
                     <ul class="nav-links">
                         <li><a href="index.html">Daily To-Do</a></li>
                         <li><a href="guides.html">Guides</a></li>
+                        <li><a href="event.html">Event</a></li>
                     </ul>
                 </nav>
             </div>
@@ -25,10 +26,147 @@
                 <div class="back-link">
                     <a href="passions.html">← Retour aux Passions</a>
                 </div>
-                <h2>🌿 Jardinage</h2>
-                <div style="text-align: center; padding: 60px 20px;">
-                    <h1 style="font-size: 3em; color: #ff6b6b; margin-bottom: 20px;">🚧 WORK IN PROGRESS 🚧</h1>
-                    <p style="font-size: 1.2em; color: #777;">Cette section est actuellement en cours de développement. Revenez bientôt !</p>
+
+                <h2>🌿 Guide Complet du Jardinage</h2>
+
+                <div class="fish-legend">
+                    <h3>📖 Légende</h3>
+                    <div class="legend-grid">
+                        <div class="legend-item">
+                            <strong>Temps de pousse:</strong> ⏱️ Valeur indiquée • — = Non communiqué
+                        </div>
+                        <div class="legend-item">
+                            <strong>Coût des graines:</strong> 💰 Prix d'achat en Gold
+                        </div>
+                        <div class="legend-item">
+                            <strong>Niveau:</strong> 🌱 Requis pour débloquer la culture
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-search">
+                    <input type="text" id="gardenSearch" placeholder="🔍 Rechercher une culture par nom, niveau, temps ou prix..." />
+                    <div class="search-filters">
+                        <button class="filter-btn active" data-filter="all">Toutes (13)</button>
+                        <button class="filter-btn" data-filter="debutant">🌱 Débutant (5)</button>
+                        <button class="filter-btn" data-filter="intermediaire">🌿 Intermédiaire (5)</button>
+                        <button class="filter-btn" data-filter="avance">🌳 Avancé (3)</button>
+                        <button class="filter-btn" data-filter="rare">⭐ Recommandées (3)</button>
+                    </div>
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+
+                <div class="fish-section" data-location="debutant">
+                    <h3>🌱 CULTURES DÉBUTANT</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>🍅 Tomate</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 15 min</p>
+                            <p class="fish-info">Culture de base rentable en début de progression.</p>
+                            <p class="fish-price">💰 10 Gold</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>🥔 Pomme de terre ⭐</h4>
+                            <p class="fish-level">Niveau 1</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 60 min</p>
+                            <p class="fish-info">Très utile en début de jeu pour la montée en ressources.</p>
+                            <p class="fish-price">💰 30 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🌾 Blé</h4>
+                            <p class="fish-level">Niveau 2</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 4 heures</p>
+                            <p class="fish-info">Culture régulière avec un bon équilibre temps/coût.</p>
+                            <p class="fish-price">💰 95 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🥬 Laitue</h4>
+                            <p class="fish-level">Niveau 3</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 8 heures</p>
+                            <p class="fish-info">Idéale pour les sessions plus longues hors ligne.</p>
+                            <p class="fish-price">💰 145 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🍍 Ananas</h4>
+                            <p class="fish-level">Niveau 4</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 30 min</p>
+                            <p class="fish-info">Culture rapide pour relancer la rotation du jardin.</p>
+                            <p class="fish-price">💰 15 Gold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-section" data-location="intermediaire">
+                    <h3>🌿 CULTURES INTERMÉDIAIRES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>🥕 Carotte</h4>
+                            <p class="fish-level">Niveau 5</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 2 heures</p>
+                            <p class="fish-info">Culture polyvalente et accessible au milieu de progression.</p>
+                            <p class="fish-price">💰 50 Gold</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>🍓 Fraise ⭐</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 6 heures</p>
+                            <p class="fish-info">Option rentable pour les récoltes planifiées.</p>
+                            <p class="fish-price">💰 125 Gold</p>
+                        </div>
+                        <div class="fish-card rare">
+                            <h4>🌽 Maïs ⭐</h4>
+                            <p class="fish-level">Niveau 6</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 12 heures</p>
+                            <p class="fish-info">Culture longue adaptée aux périodes d'absence.</p>
+                            <p class="fish-price">💰 170 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🍇 Raisin</h4>
+                            <p class="fish-level">Niveau 7</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 10 heures</p>
+                            <p class="fish-info">Temps non communiqué dans les données disponibles.</p>
+                            <p class="fish-price">💰 160 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🍆 Aubergine</h4>
+                            <p class="fish-level">Niveau 8</p>
+                            <p class="fish-location">⏱️ Temps de pousse: 7 heures</p>
+                            <p class="fish-info">Culture intermédiaire avec coût stable.</p>
+                            <p class="fish-price">💰 135 Gold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-section" data-location="avance">
+                    <h3>🌳 CULTURES AVANCÉES</h3>
+                    <div class="fish-grid">
+                        <div class="fish-card">
+                            <h4>🍵 Théier</h4>
+                            <p class="fish-level">Niveau 11</p>
+                            <p class="fish-location">⏱️ Temps de pousse: —</p>
+                            <p class="fish-info">Arbre avancé débloqué en fin de progression.</p>
+                            <p class="fish-price">💰 25 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🍫 Cacaoyer</h4>
+                            <p class="fish-level">Niveau 12</p>
+                            <p class="fish-location">⏱️ Temps de pousse: —</p>
+                            <p class="fish-info">Ressource premium orientée production spécialisée.</p>
+                            <p class="fish-price">💰 110 Gold</p>
+                        </div>
+                        <div class="fish-card">
+                            <h4>🥑 Avocat</h4>
+                            <p class="fish-level">Niveau 13</p>
+                            <p class="fish-location">⏱️ Temps de pousse: —</p>
+                            <p class="fish-info">Culture de haut niveau à fort investissement.</p>
+                            <p class="fish-price">💰 180 Gold</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fish-note">
+                    <p><strong>Conseil:</strong> alterne cultures rapides (15 à 60 min) et cultures longues (6 à 12 h) pour optimiser tes revenus selon ton temps de jeu.</p>
                 </div>
             </div>
         </section>
@@ -39,5 +177,106 @@
             <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <script>
+        const searchInput = document.getElementById('gardenSearch');
+        const searchResults = document.getElementById('searchResults');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cropCards = document.querySelectorAll('.fish-card');
+        const cropSections = document.querySelectorAll('.fish-section');
+
+        let currentFilter = 'all';
+
+        function searchCrops() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            if (searchTerm === '') {
+                searchResults.style.display = 'none';
+                applyFilter(currentFilter);
+                return;
+            }
+
+            searchResults.style.display = 'block';
+            searchResults.innerHTML = '';
+
+            cropCards.forEach(card => {
+                const cropName = card.querySelector('h4').textContent.toLowerCase();
+                const cropLevel = card.querySelector('.fish-level').textContent.toLowerCase();
+                const cropTime = card.querySelector('.fish-location').textContent.toLowerCase();
+                const cropInfo = card.querySelector('.fish-info').textContent.toLowerCase();
+                const cropPrice = card.querySelector('.fish-price').textContent.toLowerCase();
+
+                if (
+                    cropName.includes(searchTerm) ||
+                    cropLevel.includes(searchTerm) ||
+                    cropTime.includes(searchTerm) ||
+                    cropInfo.includes(searchTerm) ||
+                    cropPrice.includes(searchTerm)
+                ) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            cropSections.forEach(section => {
+                const visibleCardsInSection = Array.from(section.querySelectorAll('.fish-card'))
+                    .filter(card => card.style.display !== 'none').length;
+                section.style.display = visibleCardsInSection > 0 ? 'block' : 'none';
+            });
+
+            if (visibleCount === 0) {
+                searchResults.innerHTML = '<p class="no-results">❌ Aucune culture trouvée pour "' + searchTerm + '"</p>';
+            } else {
+                searchResults.innerHTML = '<p class="search-count">✓ ' + visibleCount + ' culture(s) trouvée(s)</p>';
+            }
+        }
+
+        function applyFilter(filter) {
+            currentFilter = filter;
+
+            if (filter === 'all') {
+                cropCards.forEach(card => card.style.display = 'block');
+                cropSections.forEach(section => section.style.display = 'block');
+            } else if (filter === 'rare') {
+                cropCards.forEach(card => {
+                    card.style.display = card.classList.contains('rare') ? 'block' : 'none';
+                });
+
+                cropSections.forEach(section => {
+                    const visibleCards = Array.from(section.querySelectorAll('.fish-card.rare'));
+                    section.style.display = visibleCards.length > 0 ? 'block' : 'none';
+                });
+            } else {
+                cropSections.forEach(section => {
+                    if (section.dataset.location === filter) {
+                        section.style.display = 'block';
+                        section.querySelectorAll('.fish-card').forEach(card => card.style.display = 'block');
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            }
+
+            searchResults.style.display = 'none';
+        }
+
+        searchInput.addEventListener('input', searchCrops);
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.dataset.filter;
+                searchInput.value = '';
+                applyFilter(filter);
+            });
+        });
+
+        searchResults.style.display = 'none';
+    </script>
 </body>
 </html>
