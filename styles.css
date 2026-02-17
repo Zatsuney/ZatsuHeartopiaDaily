@@ -1052,3 +1052,56 @@ footer {
     color: #e74c3c;
     font-size: 0.85rem;
 }
+
+/* Global mobile fixes */
+@media (max-width: 768px) {
+    .hero-nav .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 0.6rem;
+    }
+
+    .tasks-grid-5cols,
+    .tasks-grid-4cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .parcelles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .task-card {
+        min-height: auto;
+    }
+
+    .task-buttons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 14px;
+    }
+
+    .hero-nav .nav-links {
+        gap: 0.7rem;
+    }
+
+    .hero-nav .nav-links a {
+        font-size: 1rem;
+    }
+
+    .tasks-grid,
+    .tasks-grid-5cols,
+    .tasks-grid-4cols,
+    .tasks-grid-7cols {
+        grid-template-columns: 1fr;
+    }
+
+    .task-buttons .btn-check,
+    .task-buttons .btn-uncheck {
+        width: 100%;
+    }
+}
