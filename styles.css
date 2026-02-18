@@ -455,7 +455,7 @@ section {
     margin: auto;
     display: block;
     width: 90%;
-    max-width: 800px;
+    max-width: 1800px;
     max-height: 90vh;
     object-fit: contain;
     position: absolute;
@@ -496,6 +496,10 @@ section {
 
 .close:hover {
     color: #bbb;
+}
+
+img.zoomable-image {
+    cursor: zoom-in;
 }
 
 /* Task Checkbox */
@@ -899,7 +903,7 @@ footer {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-#fishSearch, #bugSearch, #birdSearch, #recipeSearch, #gardenSearch {
+#fishSearch, #bugSearch, #birdSearch, #recipeSearch, #gardenSearch, #resourceSearch, #pnjSearch {
     width: 100%;
     padding: 1.2rem 1.5rem;
     font-size: 1.1rem;
@@ -910,7 +914,7 @@ footer {
     background: #f8f9fa;
 }
 
-#fishSearch:focus, #bugSearch:focus, #birdSearch:focus, #recipeSearch:focus, #gardenSearch:focus {
+#fishSearch:focus, #bugSearch:focus, #birdSearch:focus, #recipeSearch:focus, #gardenSearch:focus, #resourceSearch:focus, #pnjSearch:focus {
     border-color: #667eea;
     background: white;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
@@ -989,7 +993,7 @@ footer {
         padding: 0.6rem 1.2rem;
     }
     
-    #fishSearch, #gardenSearch {
+    #fishSearch, #gardenSearch, #resourceSearch, #pnjSearch {
         font-size: 1rem;
         padding: 1rem 1.2rem;
     }

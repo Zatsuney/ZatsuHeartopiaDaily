@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNJ - Zatsu Daily Heartopia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="pnj" class="hero">
+            <div class="container">
+                <img src="images/logoh2.png" alt="Zatsu Daily Heartopia" class="hero-logo">
+                <nav class="hero-nav">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Daily To-Do</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="patchnote.html">Patch Notes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section id="pnj-content" class="tasks">
+            <div class="container">
+                <div class="back-link">
+                    <a href="guides.html">← Retour aux Guides</a>
+                </div>
+                <h2>👥 Liste des PNJ</h2>
+                <div class="fish-search">
+                    <input type="text" id="pnjSearch" placeholder="🔍 Rechercher un PNJ par nom ou localisation..." />
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+                <div class="tasks-grid tasks-grid-4cols">
+                    <div class="task-card">
+                        <img src="images/albertjr.png" alt="Albert Jr.">
+                        <h3>Albert Jr</h3>
+                        <p>Localisation : Se déplace autour des foyers<legend>Vendez-lui tout ce que vous voulez pour vous faire de l'or !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/andrew.png" alt="Andrew">
+                        <h3>Andrew</h3>
+                        <p>Localisation : Sortie de la rue du jardin<legend>Il vous vendra des véhicules !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/annie.png" alt="Annie">
+                        <h3>Annie</h3>
+                        <p>Localisation : Centre-ville - Fontaine<legend>Elle vous vendra des instruments de musique et des émotes pour de belles photos seul(e) ou entre ami(e)s !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/baileyj.png" alt="Bailey J.">
+                        <h3>Bailey J.</h3>
+                        <p>Localisation : Centre-ville - Animalerie à l'étage<legend>Achetez-lui de la nourriture pour oiseaux ! Et donnez-lui chaque jour des cartes d'observation d'oiseaux !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/bill.png" alt="Bill">
+                        <h3>Bill</h3>
+                        <p>Localisation : Village de pêcheurs<legend>Vous voulez pêcher en mer ? C'est lui qu'il faut voir !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/blanc.png" alt="Blanc">
+                        <h3>Blanc</h3>
+                        <p>Localisation : Rue du jardin<legend>Achetez-lui toutes vos graines, engrais et auxines !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/bob.png" alt="Bob">
+                        <h3>Bob</h3>
+                        <p>Localisation : Centre-ville - Boutique de meubles<legend>C'est lui qui va meubler votre intérieur !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/collectionneur.png" alt="Collectionneur">
+                        <h3>Collectionneur</h3>
+                        <p>Localisation : Ville<legend>Au début de votre aventure, il vous vendra des articles en promotion !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/dorothee.png" alt="Dorothée">
+                        <h3>Dorothée</h3>
+                        <p>Localisation : Centre-ville - Boutique de vêtements<legend>C'est elle, votre styliste !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/kaching.png" alt="Kaching">
+                        <h3>Kaching</h3>
+                        <p>Localisation : Sortie de la rue des habitants<legend>Petite boutique qui vous vendra des puzzles, des feux d'artifice et d'autres articles !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/massimo.png" alt="Massimo">
+                        <h3>Massimo</h3>
+                        <p>Localisation : Rue des habitants<legend>Achetez-lui des cuisinières, des recettes et des ingrédients de cuisine !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/mmejoan.png" alt="Mme. Joan">
+                        <h3>Mme. Joan</h3>
+                        <p>Localisation : Centre-ville - Animalerie<legend>Adoptez un chien ou un chat, achetez-lui de la nourriture pour animaux et des accessoires !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/naniwa.png" alt="Naniwa">
+                        <h3>Naniwa</h3>
+                        <p>Localisation : Rue du jardin<legend>Achetez-lui des terrariums et des accessoires pour capturer des insectes !</legend></p>
+                    </div>
+                    <div class="task-card">
+                        <img src="images/vanya.png" alt="Vanya">
+                        <h3>Vanya</h3>
+                        <p>Localisation : Rue du jardin<legend>Achetez-lui de quoi exposer vos poissons, et des accessoires pour la pêche !</legend></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zatsu. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        const searchInput = document.getElementById('pnjSearch');
+        const searchResults = document.getElementById('searchResults');
+        const pnjCards = document.querySelectorAll('#pnj-content .task-card');
+
+        function searchPnj() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            if (searchTerm === '') {
+                pnjCards.forEach(card => {
+                    card.style.display = 'flex';
+                });
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            pnjCards.forEach(card => {
+                const name = card.querySelector('h3')?.textContent.toLowerCase() || '';
+                const info = card.querySelector('p')?.textContent.toLowerCase() || '';
+                const alt = card.querySelector('img')?.alt.toLowerCase() || '';
+
+                if (name.includes(searchTerm) || info.includes(searchTerm) || alt.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            searchResults.style.display = 'block';
+            if (visibleCount === 0) {
+                searchResults.innerHTML = '<p class="no-results">❌ Aucun PNJ trouvé pour "' + searchTerm + '"</p>';
+            } else {
+                searchResults.innerHTML = '<p class="search-count">✓ ' + visibleCount + ' PNJ trouvé(s)</p>';
+            }
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', searchPnj);
+        }
+
+        if (searchResults) {
+            searchResults.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
